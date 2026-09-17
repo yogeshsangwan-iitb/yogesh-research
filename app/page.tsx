@@ -1,10 +1,10 @@
-import Link from "next/link";
 import { getAllArticles } from "@/lib/content";
-import StartupLogo from "@/components/StartupLogo";
-import IndustryMark from "@/components/IndustryMark";
+import ResearchCard from "@/components/ResearchCard";
 
 export default function Home() {
   const articles = getAllArticles();
+  const featured = articles.slice(0, 2);
+  const rest = articles.slice(2);
 
   return (
     <main className="mx-auto max-w-5xl px-6">
@@ -28,31 +28,35 @@ export default function Home() {
           Latest Research
         </p>
 
-        <div className="mt-8 divide-y divide-neutral-200">
-          {articles.map((item, index) => (
-            <Link
-              key={item.slug}
-              href={`/research/${item.slug}`}
-              className="flex items-center gap-6 py-6 hover:opacity-70"
-            >
-              {item.category === "Startups" ? (
-                <StartupLogo logo={item.logo} name={item.title} />
-              ) : (
-                <IndustryMark />
-              )}
-              <span className="text-sm text-neutral-400">
-                / {String(index + 1).padStart(2, "0")}
-              </span>
-              <div>
-                <h2 className="text-xl font-semibold">{item.title}</h2>
-                <p className="mt-1 text-sm text-neutral-500">
-                  {item.category.toUpperCase()} · {item.subcategory} ·{" "}
-                  {item.date}
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
+        {featured.length > 0 && (
+          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {featured.map((item) => (
+              <ResearchCard
+                key={item.slug}
+                slug={item.slug}
+                title={item.title}
+                category={item.category}
+                logo={item.logo}
+                size="large"
+              />
+            ))}
+          </div>
+        )}
+
+        {rest.length > 0 && (
+          <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+            {rest.map((item) => (
+              <ResearchCard
+                key={item.slug}
+                slug={item.slug}
+                title={item.title}
+                category={item.category}
+                logo={item.logo}
+                size="small"
+              />
+            ))}
+          </div>
+        )}
       </section>
     </main>
   );
