@@ -2,7 +2,7 @@
   "_comment": "News sources for the Daily Brief. 'focus' = startup feeds are mostly relevant already; 'general' feeds are filtered harder by keywords. Add or remove feeds freely; a feed that fails is skipped, not fatal.",
   "feeds": [
     { "name": "Inc42", "url": "https://inc42.com/feed/", "region": "india", "focus": "startup" },
-    { "name": "Entrackr", "url": "https://entrackr.com/feed", "region": "india", "focus": "startup" },
+    { "name": "Entrackr", "url": "https://entrackr.com/rss", "region": "india", "focus": "startup" },
     { "name": "YourStory", "url": "https://yourstory.com/feed", "region": "india", "focus": "startup" },
     { "name": "ET Tech", "url": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms", "region": "india", "focus": "startup" },
     { "name": "ET Industry", "url": "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms", "region": "india", "focus": "general" },
