@@ -1,0 +1,72 @@
+name: Daily Brief
+
+# Builds the day's simplified VC / startup / finance news brief and commits it.
+# Vercel sees the new commit and redeploys the site automatically.
+
+on:
+  schedule:
+    # 01:15 UTC = 06:45 AM India time, every day.
+    # (GitHub can start scheduled runs a few minutes late at busy times.)
+    - cron: "15 1 * * *"
+  # Lets you run it by hand: GitHub → Actions → Daily Brief → Run workflow
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-brief
+  cancel-in-progress: false
+
+jobs:
+  build-brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out the website code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build today's brief
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          AI_PROVIDER: ${{ vars.AI_PROVIDER }}
+        run: python scripts/news/build_brief.py
+
+      - name: Save the brief to the repo
+        id: commit
+        run: |
+          git config user.name "daily-brief-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/news
+          if git diff --cached --quiet; then
+            echo "Nothing new to publish."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "Daily Brief: $(TZ=Asia/Kolkata date +%Y-%m-%d)"
+          for i in 1 2 3; do
+            git pull --rebase --quiet origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break
+            echo "Push failed, retrying ($i)…"; sleep 5
+          done
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Optional backup: if you add a Vercel Deploy Hook URL as the secret
+      # VERCEL_DEPLOY_HOOK, the site is redeployed even if Vercel ignores bot commits.
+      - name: Trigger Vercel deploy (optional)
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -n "$HOOK" ]; then
+            curl -fsS -X POST "$HOOK" > /dev/null && echo "Vercel deploy triggered."
+          else
+            echo "No deploy hook set; relying on Vercel's GitHub integration."
+          fi

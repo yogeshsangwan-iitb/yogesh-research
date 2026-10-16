@@ -1,0 +1,48 @@
+name: Checks
+
+# Makes sure the site builds and the news script works before anything is merged.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "content/news/**"
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+
+  news-script:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests
+        run: python -m unittest discover -s scripts/news/tests -v
+      - name: Validate saved briefs
+        run: |
+          python - <<'EOF'
+          import json, pathlib, sys
+          bad = 0
+          for p in sorted(pathlib.Path("content/news").glob("*.json")):
+              d = json.loads(p.read_text(encoding="utf-8"))
+              ok = d.get("date") == p.stem and isinstance(d.get("sections"), list)
+              ok = ok and all(isinstance(s.get("stories"), list) for s in d["sections"])
+              if not ok:
+                  print(f"Invalid brief file: {p}"); bad += 1
+          sys.exit(1 if bad else 0)
+          EOF

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TC</title>
+<entry><title>Sequoia closes new $750M early-stage fund</title><link rel="alternate" href="https://example.com/tc/sequoia-fund"/><updated>2026-10-15T18:00:00Z</updated><summary>The venture firm closed its latest early-stage fund.</summary></entry>
+<entry><title type="html">AI startup Lumen raises $40M Series A</title><link href="https://example.com/tc/lumen"/><published>2026-10-15T12:00:00Z</published><summary type="html">&lt;p&gt;Lumen raised $40 million.&lt;/p&gt;</summary></entry>
+<entry><title>TechCrunch Disrupt 2026: Last day</title><link href="https://example.com/tc/disrupt"/><updated>2026-10-15T14:00:00Z</updated><summary>Startups and investors, final day. Save 50% on passes.</summary></entry>
+<entry><title>Save 50% on your TechCrunch Disrupt 2026 ticket</title><link href="https://example.com/tc/disrupt2"/><updated>2026-10-15T15:00:00Z</updated><summary>Venture investors meet founders.</summary></entry>
+</feed>
