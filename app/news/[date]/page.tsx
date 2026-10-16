@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import BriefView from "@/components/BriefView";
-import { formatBriefDate, getAllBriefDates, getBrief, getBriefArchive, getEdition } from "@/lib/news";
+import { formatBriefDate, getAllBriefDates, getBrief, getRecentBriefs } from "@/lib/news";
 
 export function generateStaticParams() {
   return getAllBriefDates().map((date) => ({ date }));
@@ -19,20 +19,9 @@ export async function generateMetadata({ params }: { params: Promise<{ date: str
 
 export default async function BriefPage({ params }: { params: Promise<{ date: string }> }) {
   const { date } = await params;
-  const brief = getBrief(date);
+  // Only the last 7 days are available to readers
+  const brief = getAllBriefDates().includes(date) ? getBrief(date) : null;
   if (!brief) notFound();
 
-  const dates = getAllBriefDates(); // newest first
-  const idx = dates.indexOf(date);
-
-  return (
-    <BriefView
-      brief={brief}
-      edition={getEdition(date)}
-      isLatest={idx === 0}
-      newer={idx > 0 ? dates[idx - 1] : null}
-      older={dates[idx + 1] ?? null}
-      archive={getBriefArchive()}
-    />
-  );
+  return <BriefView brief={brief} days={getRecentBriefs()} />;
 }

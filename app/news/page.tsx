@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BriefView from "@/components/BriefView";
-import { getAllBriefDates, getBriefArchive, getEdition, getLatestBrief } from "@/lib/news";
+import { getLatestBrief, getRecentBriefs } from "@/lib/news";
 
 export const metadata: Metadata = {
   title: "Daily brief",
@@ -29,17 +29,5 @@ export default function NewsPage() {
     );
   }
 
-  const dates = getAllBriefDates();
-  const idx = dates.indexOf(brief.date);
-
-  return (
-    <BriefView
-      brief={brief}
-      edition={getEdition(brief.date)}
-      isLatest
-      newer={null}
-      older={dates[idx + 1] ?? null}
-      archive={getBriefArchive()}
-    />
-  );
+  return <BriefView brief={brief} days={getRecentBriefs()} />;
 }
