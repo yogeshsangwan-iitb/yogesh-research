@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { OWNER_NAME, SITE_NAME, profileLinks } from "@/lib/profile";
+import { OWNER_NAME, profileLinks } from "@/lib/profile";
 
 export default function Footer() {
   return (
     <footer className="mt-auto border-t border-ink">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <p className="text-xl font-semibold tracking-tight">{SITE_NAME}</p>
+          <p className="text-xl font-semibold tracking-tight">{OWNER_NAME}</p>
           <p className="mt-3 max-w-sm text-sm leading-relaxed text-stone">
-            Independent research on startups, industries and markets by {OWNER_NAME}, written from IIT Bombay.
+            Independent research on startups, industries and markets, written from IIT Bombay.
           </p>
         </div>
         <div>

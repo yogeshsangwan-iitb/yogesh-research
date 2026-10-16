@@ -17,8 +17,8 @@ const grotesk = Schibsted_Grotesk({
 
 export const metadata: Metadata = {
   title: {
-    default: "1stmillionmile — Research by Yogesh Sangwan",
-    template: "%s — 1stmillionmile",
+    default: "Yogesh Sangwan — Research",
+    template: "%s — Yogesh Sangwan",
   },
   description:
     "Independent research on startups, industries and markets, plus a daily brief of VC and startup news in plain English.",
