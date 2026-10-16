@@ -203,5 +203,66 @@ class HousekeepingTests(unittest.TestCase):
         self.assertIn("::error title=Daily Brief::No AI key found.%0Asecond line", buf.getvalue())
 
 
+class GeminiBusyTests(unittest.TestCase):
+    def _http(self, url, code):
+        import urllib.error
+        return urllib.error.HTTPError(url, code, "x", {}, None)
+
+    def test_busy_model_falls_back_to_next(self):
+        calls = []
+
+        def fake_post(url, payload, headers, timeout=180):
+            calls.append(url)
+            if "gemini-flash-latest" in url:
+                raise self._http(url, 503)
+            return {"candidates": [{"content": {"parts": [{"text": '{"ok": 1}'}]}}]}
+
+        with mock.patch.dict("os.environ", {"GEMINI_API_KEY": "k", "GEMINI_MODEL": ""}), \
+             mock.patch.object(bb, "_post_json", side_effect=fake_post), \
+             mock.patch.object(bb.time, "sleep") as slept:
+            text, used = bb.call_gemini("s", "u")
+        self.assertEqual(used, "gemini:gemini-2.5-flash")
+        self.assertEqual(sum("gemini-flash-latest" in c for c in calls), 3, "busy model retried twice")
+        self.assertEqual([c.args[0] for c in slept.call_args_list], [20, 45])
+
+    def test_all_busy_gives_clear_error(self):
+        listing = {"models": [{"name": "models/gemini-3.5-flash", "supportedGenerationMethods": ["generateContent"]}]}
+
+        def always_busy(url, payload, headers, timeout=180):
+            raise self._http(url, 503)
+
+        with mock.patch.dict("os.environ", {"GEMINI_API_KEY": "k", "GEMINI_MODEL": ""}), \
+             mock.patch.object(bb, "_post_json", side_effect=always_busy), \
+             mock.patch.object(bb, "_get_json", return_value=listing), \
+             mock.patch.object(bb.time, "sleep"):
+            with self.assertRaises(bb.AIError) as ctx:
+                bb.call_gemini("s", "u")
+        msg = str(ctx.exception)
+        for m in ["gemini-flash-latest", "gemini-2.5-flash", "gemini-3.5-flash", "gemini-flash-lite-latest"]:
+            self.assertIn(m, msg)
+
+    def test_bad_key_stops_immediately(self):
+        n = []
+
+        def bad_key(url, payload, headers, timeout=180):
+            n.append(url)
+            raise self._http(url, 403)
+
+        with mock.patch.dict("os.environ", {"GEMINI_API_KEY": "k"}), \
+             mock.patch.object(bb, "_post_json", side_effect=bad_key):
+            with self.assertRaises(bb.AIError):
+                bb.call_gemini("s", "u")
+        self.assertEqual(len(n), 1)
+
+    def test_backup_run_skips_when_brief_exists(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp)
+            (out / "2026-10-16.json").write_text("{}", encoding="utf-8")
+            with mock.patch.object(bb, "OUTPUT_DIR", out), mock.patch.object(bb, "collect") as collect:
+                code = bb.main(["--now", NOW.isoformat()])
+            self.assertEqual(code, 0)
+            collect.assert_not_called()
+
+
 if __name__ == "__main__":
     unittest.main()

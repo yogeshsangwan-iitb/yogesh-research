@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-11",
+  "generatedAt": "2026-10-16T11:00:00+00:00",
+  "generatedBy": "claude:backfill",
+  "feedsRead": 3,
+  "storiesScanned": 0,
+  "tldr": [
+    "Indian startups raised only about $113–123 Mn this week across 28 deals, down roughly 72% from the week before.",
+    "Personal care brand Nat Habit raised ₹142 Cr, led by Trident Growth Partners, to go from about 20,000 to 2 lakh shops.",
+    "Peak XV sold about ₹30 Cr of co-working company Awfis's shares, continuing to cut its stake.",
+    "Cleantech startups raised $433 Mn in Q3 2026, almost four times a year earlier, led by electric-vehicle makers."
+  ],
+  "sections": [
+    {
+      "id": "funding",
+      "title": "Funding rounds",
+      "stories": [
+        {
+          "title": "Startup funding falls about 72% in a quiet week",
+          "summary": "Indian startups raised about $113 Mn across 28 deals in the week of 5 to 10 October, according to Entrackr, down about 72% from $411 Mn the week before. Inc42 counted about $123 Mn. Most deals were small: 22 were early-stage. The biggest were DailyObjects (₹332 Cr), Beyond Appliances (₹110 Cr) and NeoGrowth (₹85 Cr).",
+          "whyItMatters": "Weekly totals swing a lot because one big deal can double them. Many small early-stage deals and few large ones suggest investors are still cautious with big cheques.",
+          "sector": "Venture market",
+          "amount": "About $113 Mn",
+          "stage": null,
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startups-this-week-oct-5-oct-10-12662210"
+            },
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/from-dailyobjects-to-stockgro-indian-startups-raised-about-123-mn-this-week/"
+            }
+          ],
+          "publishedAt": "2026-10-10"
+        },
+        {
+          "title": "Nat Habit raises ₹142 Cr to get into 2 lakh shops",
+          "summary": "Nat Habit, a D2C personal care brand selling ayurvedic-style hair oils, masks and face creams, raised ₹142 Cr in a Series C led by Trident Growth Partners, with existing and new investors. It says its annual gross revenue run-rate is ₹330 Cr. It wants to grow from about 20,000 offline stores to 2 lakh in three years and launch sunscreens and serums.",
+          "whyItMatters": "Many online-first brands are now moving into physical shops, because that is where most Indian shoppers still buy. Offline expansion is expensive, which is why brands raise large rounds for it.",
+          "sector": "D2C",
+          "amount": "₹142 Cr",
+          "stage": "Series C",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/d2c-brand-nat-habit-raises-%e2%82%b9142-cr-to-scale-offline-expansion/"
+            }
+          ],
+          "publishedAt": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "id": "exits",
+      "title": "IPOs, acquisitions & exits",
+      "stories": [
+        {
+          "title": "Peak XV sells ₹30 Cr of Awfis shares",
+          "summary": "An affiliate of Peak XV Partners sold 12.2 lakh shares of Awfis, a listed co-working company, for about ₹29.8 Cr at ₹245 each in a bulk deal. Peak XV has now sold more than half of its holding.",
+          "whyItMatters": "This is a VC exit in action: after a company lists on the stock market, its early investors sell shares in steps to return money to their own investors.",
+          "sector": "Real estate",
+          "amount": "₹29.8 Cr",
+          "stage": "Bulk deal",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/peak-xv-sells-awfis-shares-via-%e2%82%b930-cr-bulk-deal/"
+            }
+          ],
+          "publishedAt": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "id": "startups",
+      "title": "Startup & industry moves",
+      "stories": [
+        {
+          "title": "OTPless hires ex-BharatPe executive Geetanshu Singla as CTO",
+          "summary": "Login and authentication startup OTPless appointed Geetanshu Singla, formerly at BharatPe, as its chief technology officer.",
+          "whyItMatters": "Senior hires are a signal of where a startup is heading. Investors watch whether a company can attract experienced leaders as it grows.",
+          "sector": "SaaS",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/otpless-ropes-in-ex-bharatpe-exec-geetanshu-singla-as-new-cto/"
+            }
+          ],
+          "publishedAt": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "id": "economy",
+      "title": "Economy, policy & markets",
+      "stories": [
+        {
+          "title": "Cleantech funding jumps to $433 Mn in Q3, led by EV makers",
+          "summary": "Indian cleantech startups raised $433 Mn across 23 deals in July to September 2026, up from $118 Mn across 16 deals a year earlier. Electric-vehicle companies made up 57% of deals. River ($120 Mn), Yulu ($93 Mn) and Ultraviolette ($85 Mn) together took nearly 69% of the money.",
+          "whyItMatters": "When a few big rounds make up most of a sector's funding, investors are concentrating on likely winners rather than spreading bets widely.",
+          "sector": "Cleantech",
+          "amount": "$433 Mn",
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/ev-bets-drive-indias-cleantech-funding-surge-in-q3/"
+            }
+          ],
+          "publishedAt": "2026-10-10"
+        },
+        {
+          "title": "Markets end an eight-week losing streak; MobiKwik jumps 25%",
+          "summary": "The Sensex rose 0.78% and the Nifty 0.44% this week, ending an eight-week losing run, even after the Nifty touched a 52-week low midweek. Among listed new-age tech companies, 36 of 66 gained. MobiKwik rose nearly 25%, partly on hopes of UPI merchant fees, and PhysicsWallah rose about 20%.",
+          "whyItMatters": "Listed startup share prices set the mood for private funding. When public investors pay more for tech companies, VCs can more easily raise money and value private startups higher.",
+          "sector": "Markets",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/new-age-tech-stocks-gain-this-week-mobikwik-surges-25-and-physicswallah-20/"
+            }
+          ],
+          "publishedAt": "2026-10-10"
+        }
+      ]
+    }
+  ],
+  "concept": {
+    "term": "Bulk deal",
+    "explanation": "A bulk deal is a share trade on the stock exchange in which one buyer or seller trades more than 0.5% of a listed company's shares in a single day. Exchanges publish the names of the parties, so everyone can see who bought or sold. It is different from a block deal, which is one large trade (usually ₹10 Cr or more) done in a special trading window.",
+    "example": "Peak XV sold 12.2 lakh Awfis shares in a bulk deal this week. Because bulk deals are made public, we know the buyer of most of those shares was Kritagyata Trust."
+  }
+}

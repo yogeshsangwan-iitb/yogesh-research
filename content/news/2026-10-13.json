@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-13",
+  "generatedAt": "2026-10-16T11:00:00+00:00",
+  "generatedBy": "claude:backfill",
+  "feedsRead": 2,
+  "storiesScanned": 0,
+  "tldr": [
+    "Two IPOs set their prices: Zetwerk at ₹143–151 a share for a ₹5,012 Cr issue, and Tonbo Imaging at ₹665–700 for ₹852 Cr.",
+    "Fitness brand Boldfit raised ₹400 Cr from Bharat Value Fund, about 5.7 times its previous valuation.",
+    "Chip design and testing company Tessolve, owned by Hero Electronix, raised $75 Mn.",
+    "BYJU'S parent is set to keep a 32% stake in Aakash after a settlement, according to a report."
+  ],
+  "sections": [
+    {
+      "id": "funding",
+      "title": "Funding rounds",
+      "stories": [
+        {
+          "title": "Boldfit raises ₹400 Cr at about a ₹4,000 Cr valuation",
+          "summary": "D2C fitness and wellness brand Boldfit raised ₹400 Cr in a Series B from Bharat Value Fund, which was the only investor in the round. Entrackr estimates the valuation at about ₹4,000 Cr, around 5.7 times its Series A, and says the founders still own 78.23%. The money will go to retail expansion.",
+          "whyItMatters": "Founders keeping almost 80% after two funding rounds is unusual, and it leaves them firmly in control of the company. A single investor writing the whole ₹400 Cr cheque is also rare.",
+          "sector": "D2C",
+          "amount": "₹400 Cr",
+          "stage": "Series B",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/d2c-brand-boldfit-raises-%e2%82%b9400-cr-from-bharat-value-fund-for-retail-expansion/"
+            },
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/decoding/decoding-boldfit-founders-retain-7823-stake-after-rs-400-cr-series-b-12674906"
+            }
+          ],
+          "publishedAt": "2026-10-12"
+        },
+        {
+          "title": "Hero Electronix-owned Tessolve raises $75 Mn for semiconductor services",
+          "summary": "Tessolve, a semiconductor engineering company owned by Hero Electronix, secured $75 Mn to expand its chip-related capabilities.",
+          "whyItMatters": "India is pushing to build a semiconductor industry. Companies that design and test chips are where Indian talent already has an edge, so investors see them as a way in.",
+          "sector": "Semiconductors",
+          "amount": "$75 Mn",
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/hero-electronix-owned-tessolve-secures-75-mn-to-expand-semiconductor-capabilities/"
+            }
+          ],
+          "publishedAt": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": "exits",
+      "title": "IPOs, acquisitions & exits",
+      "stories": [
+        {
+          "title": "Zetwerk sets its IPO price at ₹143–151 a share",
+          "summary": "Manufacturing company Zetwerk set a price band of ₹143 to ₹151 per share for its ₹5,012 Cr IPO. The issue includes ₹2,830 Cr of new shares, with the rest sold by existing investors, led by Lightspeed and Peak XV.",
+          "whyItMatters": "Part of this IPO is an 'offer for sale', where early VCs sell their shares to the public. That is how funds like Lightspeed and Peak XV turn their investment into cash.",
+          "sector": "Manufacturing",
+          "amount": "₹5,012 Cr",
+          "stage": "IPO",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/zetwerk-sets-ipo-price-band-at-%e2%82%b9143-%e2%82%b9151-for-%e2%82%b95012-cr-issue/"
+            },
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/news/zetwerk-raises-rs-2251-cr-from-anchor-investors-ahead-of-ipo-12676491"
+            }
+          ],
+          "publishedAt": "2026-10-12"
+        },
+        {
+          "title": "Tonbo Imaging sets its IPO price at ₹665–700 a share",
+          "summary": "Defence imaging company Tonbo Imaging set a price band of ₹665 to ₹700 per share for its ₹852 Cr IPO. The entire issue is an offer for sale by existing shareholders, so the company itself raises no new money.",
+          "whyItMatters": "When an IPO is only an offer for sale, the money goes to the selling shareholders, not the company. It is a pure exit for early investors.",
+          "sector": "Defence tech",
+          "amount": "₹852 Cr",
+          "stage": "IPO",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/tonbo-imaging-sets-ipo-price-band-at-%e2%82%b9665-%e2%82%b9700-for-%e2%82%b9852-cr-issue/"
+            }
+          ],
+          "publishedAt": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": "startups",
+      "title": "Startup & industry moves",
+      "stories": [
+        {
+          "title": "BYJU'S parent to keep 32% of Aakash after a settlement",
+          "summary": "According to a report, BYJU'S parent company will hold a 32% stake in test-prep company Aakash after a settlement.",
+          "whyItMatters": "Aakash is one of the most valuable parts of the troubled BYJU'S group. How its ownership is settled decides what the group's lenders and investors can still recover.",
+          "sector": "Edtech",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/byjus-parent-to-hold-32-stake-in-aakash-after-settlement-report/"
+            }
+          ],
+          "publishedAt": "2026-10-12"
+        }
+      ]
+    }
+  ],
+  "concept": {
+    "term": "IPO price band",
+    "explanation": "When a company sells shares to the public for the first time (an IPO), it does not fix one price. It sets a range, called the price band, and investors bid within it. The final price is usually set at the top of the band if demand is strong. The lower end and upper end cannot be more than about 20% apart.",
+    "example": "Zetwerk set a band of ₹143 to ₹151. If investors bid at the top, the company and its selling shareholders get ₹151 per share."
+  }
+}

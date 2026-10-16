@@ -1,0 +1,273 @@
+{
+  "date": "2026-10-15",
+  "generatedAt": "2026-10-16T11:00:00+00:00",
+  "generatedBy": "claude:backfill",
+  "feedsRead": 4,
+  "storiesScanned": 0,
+  "tldr": [
+    "Jio Platforms set its IPO price at ₹1,065–1,119 a share. At up to ₹30,213 Cr it would be India's largest IPO, valuing Jio at ₹10.3 lakh Cr.",
+    "Zetwerk raised ₹2,251 Cr from 99 anchor investors and Tonbo Imaging ₹255 Cr from 43, a day before their IPOs opened.",
+    "Groww's quarterly profit rose 54% to ₹725 Cr, but derivatives trading revenue fell 14.3% after a SEBI rule change.",
+    "Busy day for funding: Scimplify ($25 Mn), Spill Games ($10.5 Mn), Parallel Loop ($6.6 Mn) and Circle (₹25 Cr), among others."
+  ],
+  "sections": [
+    {
+      "id": "funding",
+      "title": "Funding rounds",
+      "stories": [
+        {
+          "title": "Scimplify raises $25 Mn led by Hitachi Ventures",
+          "summary": "Scimplify, a speciality chemicals company, raised $25 Mn led by Hitachi Ventures, with Henkel and Teknor Apex joining as new investors and Accel and 3one4 Capital investing again. It has now raised $80 Mn in equity and will expand into semiconductor and battery chemicals and grow in the US.",
+          "whyItMatters": "When large companies such as Hitachi and Henkel invest through their venture arms (corporate VC), they often also become customers or partners, which makes the startup stronger.",
+          "sector": "Deeptech",
+          "amount": "$25 Mn",
+          "stage": null,
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/news/scimplify-raises-25-mn-in-strategic-round-led-by-hitachi-ventures-12676144"
+            },
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/scimplify-bags-25-mn-to-scale-its-semiconductor-chemicals-business/"
+            }
+          ],
+          "publishedAt": "2026-10-14T19:17:51+05:30"
+        },
+        {
+          "title": "Elevation Capital leads $10.5 Mn Series A in Spill Games",
+          "summary": "Spill Games, an AI-driven mobile games studio, raised $10.5 Mn led by Elevation Capital, with existing investors Centre Court Capital and PeerCapital. It will use the money to grow its six games.",
+          "whyItMatters": "AI tools are making it cheaper to build games, so investors are betting small studios can now compete with large ones.",
+          "sector": "Gaming",
+          "amount": "$10.5 Mn",
+          "stage": "Series A",
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/news/elevation-capital-leads-105-mn-series-a-round-in-spill-games-12674083"
+            }
+          ],
+          "publishedAt": "2026-10-14T10:05:27+05:30"
+        },
+        {
+          "title": "Parallel Loop raises $6.6 Mn to put AI into company workflows",
+          "summary": "Parallel Loop, founded in June 2026, raised a $6.6 Mn seed round led by 3one4 Capital. It sends its own engineers into client companies, such as Licious and Havells, to build AI into their existing systems.",
+          "whyItMatters": "A seed round this large for a company only a few months old shows how much investors want enterprise AI. The model mixes software with services, which brings revenue early but lower margins.",
+          "sector": "AI",
+          "amount": "$6.6 Mn",
+          "stage": "Seed",
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/snippets/parallel-loop-raises-66-mn-seed-round-led-by-3one4-capital-12675732"
+            },
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/parallel-loop-raises-6-6-mn-to-integrate-ai-into-enterprise-workflows/"
+            }
+          ],
+          "publishedAt": "2026-10-14T17:18:25+05:30"
+        },
+        {
+          "title": "Smaller rounds: Circle, The Stack, OXG Space, Foundry and more",
+          "summary": "Second-hand goods marketplace Circle raised ₹25 Cr led by Nexus Venture Partners. Supplements brand The Stack raised ₹21.5 Cr. Spacetech firm OXG Space raised ₹17 Cr led by Aum Ventures. Former Dyson India MD Ankit Jain's appliance startup Foundry raised ₹12 Cr. RevRag AI ($2.5 Mn) and RocketPay (₹10 Cr) also raised money.",
+          "whyItMatters": "Many seed and early rounds in one day shows early-stage investing is active even while big rounds are rare.",
+          "sector": "Mixed",
+          "amount": null,
+          "stage": "Seed and early",
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/snippets/pre-owned-goods-marketplace-circle-raises-rs-25-cr-led-by-nexus-venture-partners-12675485"
+            },
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/the-stack-raises-%e2%82%b921-5-cr-to-broaden-its-supplements-portfolio/"
+            },
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/snippets/aum-ventures-leads-rs-17-cr-round-in-oxg-space-12674360"
+            }
+          ],
+          "publishedAt": "2026-10-14"
+        },
+        {
+          "title": "Traya in talks to raise about ₹300 Cr from Verlinvest",
+          "summary": "Haircare startup Traya is reportedly negotiating about ₹300 Cr from Belgium's Verlinvest at a ₹2,500 to 3,000 Cr valuation. Its annual revenue run-rate is said to be ₹900 to 1,000 Cr. The deal is not final.",
+          "whyItMatters": "A valuation of about three times annual revenue is a useful benchmark for what investors are willing to pay for a fast-growing D2C brand.",
+          "sector": "D2C",
+          "amount": "About ₹300 Cr",
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/exclusive-traya-in-talks-to-raise-around-%e2%82%b9300-cr-from-verlinvest/"
+            }
+          ],
+          "publishedAt": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "exits",
+      "title": "IPOs, acquisitions & exits",
+      "stories": [
+        {
+          "title": "Jio Platforms sets the stage for India's largest IPO",
+          "summary": "Jio Platforms set a price band of ₹1,065 to ₹1,119 per share and will raise up to ₹30,213 Cr, which would value it at ₹10.3 lakh Cr. Anchor bids are on 19 October and the public can apply from 21 to 23 October. ₹27,500 Cr is earmarked to repay borrowings of its subsidiaries.",
+          "whyItMatters": "A record-sized IPO sets the mood for the whole market. If it is well received, other large tech companies will find it easier to list, which helps VC-backed startups planning exits.",
+          "sector": "Telecom",
+          "amount": "₹30,213 Cr",
+          "stage": "IPO",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/jio-platforms-set-stage-for-indias-largest-ipo-at-%e2%82%b910-3-lakh-cr-valuation/"
+            },
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/jio-ipo-to-open-for-subscription-on-october-21/"
+            }
+          ],
+          "publishedAt": "2026-10-14"
+        },
+        {
+          "title": "Zetwerk and Tonbo raise money from anchor investors before their IPOs",
+          "summary": "Zetwerk raised ₹2,251 Cr from 99 anchor investors at ₹151 a share, with mutual funds taking about 46%. Tonbo Imaging raised ₹255 Cr from 43 anchors at ₹700, with mutual funds taking 57.7%. Both IPOs opened to the public on 15 October.",
+          "whyItMatters": "Strong anchor demand signals that large professional investors believe in the IPO, which often encourages others to apply.",
+          "sector": "IPOs",
+          "amount": "₹2,251 Cr",
+          "stage": "Anchor round",
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/news/zetwerk-raises-rs-2251-cr-from-anchor-investors-ahead-of-ipo-12676491"
+            },
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/ipo-bound-tonbo-imaging-nets-%e2%82%b9255-cr-from-anchor-investors/"
+            }
+          ],
+          "publishedAt": "2026-10-14"
+        },
+        {
+          "title": "Infotech acquires Lightspeed-backed SaaS startup Zluri",
+          "summary": "Canadian IT advisory firm Infotech acquired Bengaluru SaaS startup Zluri, which had raised more than $32 Mn from investors including Lightspeed. The price was not disclosed, and Zluri will run as a separate division.",
+          "whyItMatters": "Not every startup exit is an IPO. Being bought by a larger company is the most common way investors in SaaS startups get their money back.",
+          "sector": "SaaS",
+          "amount": null,
+          "stage": "Acquisition",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/infotech-acquires-lightspeed-backed-saas-startup-zluri/"
+            }
+          ],
+          "publishedAt": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "startups",
+      "title": "Startup & industry moves",
+      "stories": [
+        {
+          "title": "Groww's profit rises 54% to ₹725 Cr, but derivatives revenue falls",
+          "summary": "Groww made a ₹725 Cr profit in July to September 2026 on ₹1,502 Cr of revenue; its profit was up about 54% from a year earlier. Revenue from futures and options trading fell 14.3% from the previous quarter, which it blamed on SEBI's new closing auction system. It remains India's largest broker with 29.16% of active clients.",
+          "whyItMatters": "For a listed fintech, regulatory changes can hit a key revenue line overnight. Investors look for whether growth comes from many sources or depends on one.",
+          "sector": "Fintech",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/fintrackr/groww-makes-rs-725-cr-profit-on-rs-1502-cr-revenue-in-q2-fy27-12674759"
+            },
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/news/growws-equity-derivatives-revenue-falls-143-qoq-amid-cas-impact-12675178"
+            }
+          ],
+          "publishedAt": "2026-10-14T13:06:25+05:30"
+        },
+        {
+          "title": "Google.org gives $15 Mn to The/Nudge to help small businesses",
+          "summary": "Google.org committed $15 Mn to nonprofit The/Nudge to build AI tools that help small businesses (MSMEs) get formal credit, find markets and handle compliance, plus a voice-based skilling platform for smaller towns.",
+          "whyItMatters": "Better credit data for small businesses grows the market for fintech lenders and software startups that serve them.",
+          "sector": "MSME",
+          "amount": "$15 Mn",
+          "stage": "Grant",
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/snippets/googleorg-backs-thenudge-with-15-mn-to-digitise-indias-msmes-12676021"
+            }
+          ],
+          "publishedAt": "2026-10-14T18:29:14+05:30"
+        }
+      ]
+    },
+    {
+      "id": "economy",
+      "title": "Economy, policy & markets",
+      "stories": [
+        {
+          "title": "Centre to bring a data centre policy amid power cost worries",
+          "summary": "Minister of State for IT Jitin Prasada said the government is preparing a policy for data centres to deal with rising electricity demand and the risk of higher power bills for consumers. No timeline was given.",
+          "whyItMatters": "AI data centres use enormous amounts of electricity. Rules on power and pricing will decide how fast companies can build them in India.",
+          "sector": "Policy",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/centre-to-roll-out-data-centre-policy-amid-power-cost-concerns/"
+            }
+          ],
+          "publishedAt": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "title": "Global VC",
+      "stories": [
+        {
+          "title": "38 startups became unicorns in September",
+          "summary": "Thirty-eight startups crossed a $1 billion valuation in September 2026, adding about $71 billion in value, led by semiconductor, financial services and space companies. That brings 2026's total to 311 new unicorns.",
+          "whyItMatters": "The number of new unicorns is a quick health check for venture capital. A busy month suggests investors are confident and willing to pay high prices.",
+          "sector": "Venture market",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Crunchbase News",
+              "url": "https://news.crunchbase.com/venture/september-2026-new-unicorns-semiconductors-ai-fintech-space/"
+            }
+          ],
+          "publishedAt": "2026-10-14T11:00:04+00:00"
+        },
+        {
+          "title": "Stella & Dot founder raises $5M seed for AI marketing startup Marklo",
+          "summary": "Jessica Herrin, founder of Stella & Dot, raised a $5M seed round led by Forerunner for Marklo, which helps brands plan marketing using their own sales, stock and marketing data.",
+          "whyItMatters": "Investors back repeat founders more easily, because they have already built a company once.",
+          "sector": "AI",
+          "amount": "$5M",
+          "stage": "Seed",
+          "links": [
+            {
+              "source": "Crunchbase News",
+              "url": "https://news.crunchbase.com/venture/founder-raises-5m-next-act-ai-marketing-startup-marklo-herrin/"
+            }
+          ],
+          "publishedAt": "2026-10-14T12:00:38+00:00"
+        }
+      ]
+    }
+  ],
+  "concept": {
+    "term": "Anchor investors",
+    "explanation": "Anchor investors are large professional investors, such as mutual funds, insurers and foreign funds, who are allowed to buy part of an IPO one working day before it opens to the public. They must hold the shares for a lock-in period (30 days for half, 90 days for the rest). Because they commit early and at a known price, strong anchor demand tells everyone else that experts like the IPO.",
+    "example": "Zetwerk raised ₹2,251 Cr from 99 anchor investors at ₹151 a share the day before its IPO opened. Mutual funds took about 46% of that anchor portion."
+  }
+}
