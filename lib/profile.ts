@@ -1,5 +1,5 @@
-// Site name and your public links. Empty links are hidden automatically.
-export const SITE_NAME = "1stmillionmile";
+// Your name and public links. Empty links are hidden automatically.
+export const SHORT_NAME = "Yogesh";
 export const OWNER_NAME = "Yogesh Sangwan";
 
 type ProfileLink = { label: string; href: string; external: boolean };
