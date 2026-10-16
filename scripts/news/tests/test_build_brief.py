@@ -180,5 +180,28 @@ class GeminiTests(unittest.TestCase):
             self.assertEqual(bb.discover_gemini_model("k"), "gemini-3.5-flash")
 
 
+class HousekeepingTests(unittest.TestCase):
+    def test_prune_keeps_last_seven_days(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp)
+            for d in ["2026-10-08", "2026-10-09", "2026-10-10", "2026-10-12", "2026-10-16"]:
+                (out / f"{d}.json").write_text("{}", encoding="utf-8")
+            (out / "notes.json").write_text("{}", encoding="utf-8")
+            with mock.patch.object(bb, "OUTPUT_DIR", out):
+                removed = bb.prune_old_briefs("2026-10-16")
+            self.assertEqual(removed, ["2026-10-08.json", "2026-10-09.json"])
+            left = sorted(p.name for p in out.glob("*.json"))
+            self.assertEqual(left, ["2026-10-10.json", "2026-10-12.json", "2026-10-16.json", "notes.json"])
+
+    def test_failure_is_annotated_on_github(self):
+        import io
+        from contextlib import redirect_stdout
+        buf = io.StringIO()
+        with mock.patch.dict("os.environ", {"GITHUB_ACTIONS": "true"}), redirect_stdout(buf):
+            code = bb.fail("No AI key found.\nsecond line")
+        self.assertEqual(code, 1)
+        self.assertIn("::error title=Daily Brief::No AI key found.%0Asecond line", buf.getvalue())
+
+
 if __name__ == "__main__":
     unittest.main()

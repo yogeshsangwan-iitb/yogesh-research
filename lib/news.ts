@@ -35,7 +35,6 @@ export type Brief = {
 
 export type BriefSummary = {
   date: string;
-  edition: number;
   storyCount: number;
   lead: string | null;
 };
@@ -54,9 +53,17 @@ function allDatesAscending(): string[] {
     .sort();
 }
 
-/** All brief dates, newest first. */
+/** How many days of briefs readers can browse (the daily robot also deletes older files). */
+export const KEEP_DAYS = 7;
+
+/** Dates of the briefs from the last KEEP_DAYS days, counted back from the newest brief. Newest first. */
 export function getAllBriefDates(): string[] {
-  return allDatesAscending().reverse();
+  const dates = allDatesAscending().reverse();
+  if (dates.length === 0) return [];
+  const cutoff = new Date(`${dates[0]}T12:00:00Z`);
+  cutoff.setUTCDate(cutoff.getUTCDate() - (KEEP_DAYS - 1));
+  const cutoffIso = cutoff.toISOString().slice(0, 10);
+  return dates.filter((d) => d >= cutoffIso);
 }
 
 export function getBrief(date: string): Brief | null {
@@ -90,28 +97,20 @@ export function getLatestBrief(): Brief | null {
   return null;
 }
 
-/** Edition number: 1 for the first brief ever published, counting up. */
-export function getEdition(date: string): number {
-  return allDatesAscending().indexOf(date) + 1;
-}
-
 export function storyCount(brief: Brief): number {
   return brief.sections.reduce((n, s) => n + s.stories.length, 0);
 }
 
-export function getBriefArchive(): BriefSummary[] {
-  const ascending = allDatesAscending();
-  return ascending
-    .map((date, i) => {
-      const brief = getBrief(date);
-      return {
-        date,
-        edition: i + 1,
-        storyCount: brief ? storyCount(brief) : 0,
-        lead: brief?.sections[0]?.stories[0]?.title ?? null,
-      };
-    })
-    .reverse();
+/** The briefs a reader can pick from, newest first. */
+export function getRecentBriefs(): BriefSummary[] {
+  return getAllBriefDates().map((date) => {
+    const brief = getBrief(date);
+    return {
+      date,
+      storyCount: brief ? storyCount(brief) : 0,
+      lead: brief?.sections[0]?.stories[0]?.title ?? null,
+    };
+  });
 }
 
 /** "Friday, 16 October 2026" */

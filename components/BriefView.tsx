@@ -2,18 +2,15 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import Reveal from "@/components/Reveal";
 import type { Brief, BriefStory, BriefSummary } from "@/lib/news";
-import { formatBriefDate, formatShortDate, storyCount } from "@/lib/news";
+import { formatBriefDate, storyCount } from "@/lib/news";
 
 type BriefViewProps = {
   brief: Brief;
-  edition: number;
-  isLatest: boolean;
-  newer: string | null;
-  older: string | null;
-  archive: BriefSummary[];
+  /** The briefs a reader can switch between (last 7 days), newest first */
+  days: BriefSummary[];
 };
 
-export default function BriefView({ brief, edition, isLatest, newer, older, archive }: BriefViewProps) {
+export default function BriefView({ brief, days }: BriefViewProps) {
   const total = storyCount(brief);
 
   return (
@@ -21,28 +18,7 @@ export default function BriefView({ brief, edition, isLatest, newer, older, arch
       {/* Masthead */}
       <header className="pt-14 sm:pt-20">
         <div className="intro-rule h-px w-full bg-ink" />
-        <div className="mt-6 flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
-          <p className="intro-fade text-sm text-stone">
-            {isLatest ? "Latest edition" : "From the archive"}, no.{" "}
-            <span className="tabular">{edition}</span>
-          </p>
-          <nav aria-label="Other days" className="intro-fade flex gap-5 text-sm">
-            {older ? (
-              <Link className="link-underline" href={`/news/${older}`}>
-                Previous day
-              </Link>
-            ) : (
-              <span className="text-stone/60">Previous day</span>
-            )}
-            {newer ? (
-              <Link className="link-underline" href={`/news/${newer}`}>
-                Next day
-              </Link>
-            ) : (
-              <span className="text-stone/60">Next day</span>
-            )}
-          </nav>
-        </div>
+        <DayPicker days={days} current={brief.date} />
         <h1 className="mt-6 text-[clamp(2.6rem,7vw,5.5rem)] font-semibold leading-[0.95] tracking-[-0.035em]">
           <span className="intro-line" style={{ "--i": 0 } as CSSProperties}>
             Daily brief
@@ -136,7 +112,6 @@ export default function BriefView({ brief, edition, isLatest, newer, older, arch
         </div>
       </div>
 
-      <Archive archive={archive} current={brief.date} />
 
     </main>
   );
@@ -187,29 +162,43 @@ function StoryEntry({ story, index }: { story: BriefStory; index: number }) {
   );
 }
 
-function Archive({ archive, current }: { archive: BriefSummary[]; current: string }) {
-  const others = archive.filter((a) => a.date !== current).slice(0, 30);
-  if (others.length === 0) return null;
+function dayParts(date: string) {
+  const d = new Date(`${date}T12:00:00Z`);
+  const fmt = (o: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat("en-GB", { ...o, timeZone: "Asia/Kolkata" }).format(d);
+  return { weekday: fmt({ weekday: "short" }), day: fmt({ day: "numeric" }), month: fmt({ month: "short" }) };
+}
+
+function DayPicker({ days, current }: { days: BriefSummary[]; current: string }) {
+  if (days.length === 0) return null;
+  const newest = days[0].date;
   return (
-    <Reveal as="section" className="mt-20">
-      <div className="flex items-baseline justify-between border-t border-ink pt-4">
-        <h2 className="text-2xl font-semibold tracking-tight">Earlier briefs</h2>
-        <span className="tabular text-sm text-stone">{archive.length} in total</span>
-      </div>
-      <ul className="divide-y divide-rule border-b border-rule">
-        {others.map((a) => (
-          <li key={a.date}>
-            <Link
-              href={`/news/${a.date}`}
-              className="ledger-row grid grid-cols-[4.5rem_1fr] gap-4 px-1 py-4 sm:grid-cols-[4.5rem_1fr_7rem]"
-            >
-              <span className="tabular text-sm text-stone">{formatShortDate(a.date)}</span>
-              <span className="ledger-title truncate">{a.lead ?? `Brief no. ${a.edition}`}</span>
-              <span className="tabular hidden text-right text-sm text-stone sm:block">{a.storyCount} stories</span>
-            </Link>
-          </li>
-        ))}
+    <nav aria-label="Choose a day" className="intro-fade mt-6">
+      <p className="text-sm text-stone">
+        Pick a day <span className="text-stone/70">(last {days.length === 1 ? "1 day" : `${days.length} days`})</span>
+      </p>
+      <ul className="-mx-4 mt-3 flex gap-2 overflow-x-auto px-4 pb-2 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0">
+        {days.map((d) => {
+          const active = d.date === current;
+          const { weekday, day, month } = dayParts(d.date);
+          return (
+            <li key={d.date} className="shrink-0">
+              <Link
+                href={d.date === newest ? "/news" : `/news/${d.date}`}
+                aria-current={active ? "page" : undefined}
+                className={`flex min-w-[4.75rem] flex-col items-center rounded-[8px] border px-3 py-2 transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 ${
+                  active ? "border-ink bg-ink text-paper" : "border-rule bg-paper hover:border-ink"
+                }`}
+              >
+                <span className={`text-xs ${active ? "text-paper/75" : "text-stone"}`}>
+                  {d.date === newest ? "Latest" : weekday}
+                </span>
+                <span className="tabular text-xl font-semibold leading-tight">{day}</span>
+                <span className={`text-xs ${active ? "text-paper/75" : "text-stone"}`}>{month}</span>
+              </Link>
+            </li>
+          );
+        })}
       </ul>
-    </Reveal>
+    </nav>
   );
 }

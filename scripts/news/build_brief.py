@@ -51,6 +51,7 @@ OUTPUT_DIR = ROOT / "content" / "news"
 
 IST = timezone(timedelta(hours=5, minutes=30))
 LOOKBACK_HOURS = 36
+KEEP_DAYS = 7  # how many days of briefs the site keeps
 MAX_CANDIDATES = 60
 MAX_PER_SOURCE = 12
 MIN_SCORE = 3
@@ -73,6 +74,19 @@ SECTION_IDS = {s for s, _ in SECTIONS}
 
 def log(msg: str) -> None:
     print(msg, flush=True)
+
+
+def _annotate(level: str, msg: str) -> None:
+    """On GitHub Actions, also show the message as a run annotation (visible on the run page)."""
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        clean = msg.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+        print(f"::{level} title=Daily Brief::{clean}", flush=True)
+
+
+def fail(msg: str) -> int:
+    log(msg)
+    _annotate("error", msg)
+    return 1
 
 
 # ---------------------------------------------------------------------------
@@ -247,6 +261,7 @@ def collect(sources: list[dict], fixtures: Path | None = None) -> tuple[list[Ite
             entries = parse_feed_xml(data)
         except Exception as exc:  # noqa: BLE001 - one bad feed must not stop the brief
             log(f"  ! {src['name']}: skipped ({exc})")
+            _annotate("warning", f"Feed skipped: {src['name']} ({exc})")
             continue
         ok += 1
         log(f"  ✓ {src['name']}: {len(entries)} items")
@@ -772,8 +787,7 @@ def main(argv: list[str] | None = None) -> int:
     log("Reading feeds…")
     items, feeds_ok = collect(load_sources(), args.fixtures)
     if feeds_ok == 0:
-        log("No feeds could be read. Stopping.")
-        return 1
+        return fail("No news feeds could be read. The feed sites may be down or blocking GitHub; it will retry tomorrow.")
 
     cands = select_candidates(items, now, recently_published_urls(date))
     log(f"{len(items)} items read, {len(cands)} relevant candidates")
@@ -782,8 +796,7 @@ def main(argv: list[str] | None = None) -> int:
             log(f"{i:>2} [{it.score}] {it.source}: {it.title}")
         return 0
     if len(cands) < MIN_STORIES:
-        log("Not enough relevant news today to build a brief.")
-        return 1
+        return fail(f"Only {len(cands)} relevant stories found today (need {MIN_STORIES}). No brief written.")
 
     used = recent_concepts()
     user = USER_TEMPLATE.format(
@@ -796,15 +809,27 @@ def main(argv: list[str] | None = None) -> int:
         result, model = ask_ai(SYSTEM_PROMPT, user)
         brief = assemble(result, cands, date, model, feeds_ok, len(items))
     except AIError as exc:
-        log(f"AI step failed: {exc}")
-        return 1
+        return fail(f"AI step failed: {exc}")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     out = OUTPUT_DIR / f"{date}.json"
     out.write_text(json.dumps(brief, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     n = sum(len(s["stories"]) for s in brief["sections"])
     log(f"Wrote {out.relative_to(ROOT)} with {n} stories ({model})")
+    for old in prune_old_briefs(date):
+        log(f"Removed {old} (older than {KEEP_DAYS} days)")
     return 0
+
+
+def prune_old_briefs(today: str) -> list[str]:
+    """Keep only the briefs from the last KEEP_DAYS days (today included). Older ones stay in git history."""
+    cutoff = (datetime.fromisoformat(today) - timedelta(days=KEEP_DAYS - 1)).date().isoformat()
+    removed = []
+    for path in sorted(OUTPUT_DIR.glob("*.json")):
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", path.stem) and path.stem < cutoff:
+            path.unlink()
+            removed.append(path.name)
+    return removed
 
 
 if __name__ == "__main__":
