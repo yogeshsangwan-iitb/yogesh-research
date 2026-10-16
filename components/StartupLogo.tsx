@@ -23,7 +23,7 @@ export default function StartupLogo({ logo, name, size = 48 }: StartupLogoProps)
   return (
     <div
       style={{ width: size, height: size }}
-      className="flex items-center justify-center rounded-sm bg-neutral-100 text-sm font-semibold text-neutral-500"
+      className="flex items-center justify-center rounded-sm bg-paper-deep text-lg font-semibold text-walnut"
     >
       {initial}
     </div>

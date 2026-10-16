@@ -1,75 +1,74 @@
+import type { Metadata } from "next";
+import Reveal from "@/components/Reveal";
+import { profileLinks } from "@/lib/profile";
+
+export const metadata: Metadata = {
+  title: "About",
+};
+
+const facts = [
+  { label: "Studying", value: "B.Tech, Electrical Engineering" },
+  { label: "At", value: "Indian Institute of Technology Bombay" },
+  { label: "Based in", value: "Mumbai, India" },
+  { label: "Interested in", value: "Venture capital, startups, industries and markets" },
+];
+
 export default function AboutPage() {
   return (
-    <main className="mx-auto max-w-2xl px-6 py-16">
-      {/* Banner */}
-      <div className="relative h-48 w-full overflow-hidden rounded-md bg-neutral-100">
+    <main className="mx-auto w-full max-w-6xl px-4 pb-24 pt-12 sm:px-6 sm:pt-16">
+      <div className="intro-rule h-px w-full bg-ink" />
+
+      <div className="intro-photo relative mt-10 h-44 w-full overflow-hidden rounded-[10px] bg-paper-deep sm:h-60">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/banner.jpg"
-          alt=""
-          className="h-full w-full object-cover"
-        />
+        <img src="/banner.jpg" alt="" className="h-full w-full object-cover" />
       </div>
 
-      {/* Avatar overlapping the banner */}
-      <div className="relative -mt-16 ml-6">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/avatar.png"
-          alt="Yogesh"
-          width={128}
-          height={128}
-          className="rounded-full border-4 border-[var(--background)] object-cover"
-        />
-      </div>
+      <div className="grid gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-20">
+        <div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/avatar.png"
+            alt="Yogesh Sangwan"
+            width={136}
+            height={136}
+            className="intro-fade relative -mt-16 ml-4 h-32 w-32 rounded-full border-4 border-paper object-cover sm:h-[136px] sm:w-[136px]"
+          />
+          <h1 className="intro-line mt-6 text-[clamp(2.6rem,6vw,4.6rem)] font-semibold leading-[0.95] tracking-[-0.035em]">
+            Yogesh Sangwan
+          </h1>
+          <p className="intro-fade mt-5 max-w-md text-lg leading-relaxed text-stone">
+            Third-year Electrical Engineering student at IIT Bombay, working towards a career in venture capital.
+          </p>
+          {profileLinks.length > 0 && (
+            <div className="intro-fade mt-8 flex flex-wrap gap-3">
+              {profileLinks.map((l) => (
+                <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" className="btn btn-line">
+                  {l.label}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
 
-      {/* Name and bio */}
-      <div className="mt-6">
-        <h1 className="text-3xl font-bold">Yogesh Sangwan</h1>
-        <p className="mt-2 text-neutral-600">
-          IIT Bombay · Electrical Engineering · Researching startups,
-          industries and markets
-        </p>
-        <p className="mt-1 text-sm text-neutral-400">Mumbai, India</p>
-      </div>
-
-      {/* IIT Bombay badge */}
-      <div className="mt-6 flex items-center gap-3">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/iitb-logo.png"
-          alt="IIT Bombay logo"
-          width={40}
-          height={40}
-          className="object-contain"
-        />
-        <p className="text-sm text-neutral-700">
-          Indian Institute of Technology,
-          <br />
-          Bombay
-        </p>
-      </div>
-
-      <p className="mt-8 text-lg text-neutral-600">
-        Third-year Electrical Engineering student at IIT Bombay, interested
-        in startups, venture capital, businesses, industries and markets.
-        This site is where I publish independent research on companies and
-        industries I find interesting.
-      </p>
-
-      <div className="mt-10 flex flex-wrap gap-6 text-sm">
-        <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-neutral-600">
-          LinkedIn
-        </a>
-        <a href="https://github.com/your-handle" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-neutral-600">
-          GitHub
-        </a>
-        <a href="mailto:you@example.com" className="underline underline-offset-4 hover:text-neutral-600">
-          Email
-        </a>
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-neutral-600">
-          Resume
-        </a>
+        <div className="lg:pt-16">
+          <Reveal>
+            <p className="text-xl leading-relaxed">
+              I&rsquo;m interested in how startups are built and funded, and in the industries they try to change.
+              This site is where I publish independent research on companies and sectors I find interesting, and a
+              daily brief that keeps me, and anyone else learning, up to date with the venture capital world.
+            </p>
+          </Reveal>
+          <Reveal as="section" className="mt-12">
+            <dl className="border-t border-ink">
+              {facts.map((f) => (
+                <div key={f.label} className="grid grid-cols-[8.5rem_1fr] gap-4 border-b border-rule py-4">
+                  <dt className="text-sm text-stone">{f.label}</dt>
+                  <dd>{f.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </Reveal>
+        </div>
       </div>
     </main>
   );

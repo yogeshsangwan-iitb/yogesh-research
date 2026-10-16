@@ -1,12 +1,266 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* ------------------------------------------------------------------
+   Design tokens
+   Paper, navy ink and one rust accent. Walnut comes from the desk photo.
+   ------------------------------------------------------------------ */
+@theme inline {
+  --color-paper: #f3f2ee;
+  --color-paper-deep: #e9e7e1;
+  --color-ink: #1c2331;
+  --color-ink-soft: #3b4253;
+  --color-stone: #6b675f;
+  --color-rule: #d7d3ca;
+  --color-rust: #9a4a2a;
+  --color-rust-deep: #7e3b20;
+  --color-walnut: #5b4636;
+
+  --font-sans: var(--font-grotesk), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 :root {
-  --background: #faf9f6;
-  --foreground: #171717;
+  --background: var(--color-paper);
+  --foreground: var(--color-ink);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  font-feature-settings: "ss01", "tnum" 0;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-rust);
+  color: var(--color-paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-rust);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@layer components {
+  /* Small spaced capitals: used for navigation only, as on the reference site */
+  .nav-caps {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  /* ------------------------------------------------------------------
+     Buttons and links
+     ------------------------------------------------------------------ */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 3px;
+    transition:
+      background-color 200ms ease,
+      color 200ms ease,
+      border-color 200ms ease,
+      transform 200ms var(--ease-out-soft);
+  }
+  .btn:active {
+    transform: translateY(1px) scale(0.99);
+  }
+  .btn-rust {
+    background: var(--color-rust);
+    color: #fbf8f4;
+  }
+  .btn-rust:hover {
+    background: var(--color-rust-deep);
+  }
+  .btn-line {
+    border: 1px solid var(--color-ink);
+    color: var(--color-ink);
+    background: transparent;
+  }
+  .btn-line:hover {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 100% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 1px;
+    transition: background-size 300ms var(--ease-out-soft), color 200ms ease;
+  }
+  .link-underline:hover {
+    color: var(--color-rust);
+    background-size: 0% 1px;
+    background-position: 100% 100%;
+  }
+
+  /* ------------------------------------------------------------------
+     Ledger rows (ruled lists, like a valuation report)
+     ------------------------------------------------------------------ */
+  .ledger > * + * {
+    border-top: 1px solid var(--color-rule);
+  }
+  .ledger {
+    border-top: 1px solid var(--color-ink);
+    border-bottom: 1px solid var(--color-rule);
+  }
+
+  .ledger-row {
+    position: relative;
+    transition: background-color 250ms ease;
+  }
+  .ledger-row:hover {
+    background-color: color-mix(in srgb, var(--color-paper-deep) 70%, transparent);
+  }
+  .ledger-row .ledger-title {
+    transition: transform 350ms var(--ease-out-soft), color 200ms ease;
+  }
+  .ledger-row:hover .ledger-title {
+    transform: translateX(6px);
+    color: var(--color-rust);
+  }
+}
+
+/* ------------------------------------------------------------------
+   Opening sequence (home page, runs once on load)
+   ------------------------------------------------------------------ */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.55em);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes draw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes unmask {
+  from {
+    clip-path: inset(100% 0 0 0 round 10px);
+    transform: scale(1.06);
+  }
+  to {
+    clip-path: inset(0 0 0 0 round 10px);
+    transform: scale(1);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.intro-rule {
+  transform-origin: left center;
+  animation: draw 1100ms var(--ease-out-soft) 100ms both;
+}
+.intro-line {
+  display: block;
+  animation: rise 900ms var(--ease-out-soft) both;
+  animation-delay: calc(350ms + var(--i, 0) * 120ms);
+}
+.intro-fade {
+  animation: fade 900ms ease both;
+  animation-delay: calc(700ms + var(--i, 0) * 120ms);
+}
+.intro-photo {
+  animation: unmask 1300ms var(--ease-out-soft) 450ms both;
+}
+
+/* ------------------------------------------------------------------
+   Scroll reveal (see components/Reveal.tsx)
+   ------------------------------------------------------------------ */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 800ms ease,
+    transform 900ms var(--ease-out-soft);
+  transition-delay: calc(var(--i, 0) * 90ms);
+}
+[data-reveal="pop"] {
+  transform: translateY(14px) scale(0.965);
+}
+[data-reveal][data-shown] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .intro-rule,
+  .intro-line,
+  .intro-fade,
+  .intro-photo {
+    animation: none;
+  }
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .ledger-row .ledger-title,
+  .btn {
+    transition: none;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Long-form article text
+   ------------------------------------------------------------------ */
+.prose-report {
+  --tw-prose-body: var(--color-ink-soft);
+  --tw-prose-headings: var(--color-ink);
+  --tw-prose-links: var(--color-rust);
+  --tw-prose-bold: var(--color-ink);
+  --tw-prose-bullets: var(--color-rust);
+  --tw-prose-counters: var(--color-stone);
+  --tw-prose-hr: var(--color-rule);
+  --tw-prose-quotes: var(--color-ink);
+  --tw-prose-quote-borders: var(--color-rust);
+  --tw-prose-th-borders: var(--color-ink);
+  --tw-prose-td-borders: var(--color-rule);
+  --tw-prose-captions: var(--color-stone);
+}
+.prose-report h2 {
+  border-top: 1px solid var(--color-ink);
+  padding-top: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.prose-report table {
+  font-variant-numeric: tabular-nums;
 }
