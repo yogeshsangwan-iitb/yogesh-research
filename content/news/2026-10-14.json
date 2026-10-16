@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-14",
+  "generatedAt": "2026-10-16T11:00:00+00:00",
+  "generatedBy": "claude:backfill",
+  "feedsRead": 2,
+  "storiesScanned": 0,
+  "tldr": [
+    "A government deeptech fund picked its first group of VC managers, including Blume and Speciale Invest, to put up to ₹7,131 Cr into deeptech startups.",
+    "Urban Company's board will consider raising fresh money, reportedly ₹2,000–2,500 Cr through a QIP.",
+    "Toothsi's parent MakeO raised ₹90 Cr led by Singularity AMC.",
+    "Freshworks agreed to buy Torii, and Adani Enterprises signed an MoU with Jabil for AI data infrastructure."
+  ],
+  "sections": [
+    {
+      "id": "funding",
+      "title": "Funding rounds",
+      "stories": [
+        {
+          "title": "Toothsi parent MakeO raises ₹90 Cr",
+          "summary": "MakeO, which makes Toothsi clear teeth aligners, raised ₹90 Cr (about $9.5 Mn) led by Singularity AMC. It says its combined revenue is above ₹500 Cr and plans to expand its dental business in India and Southeast Asia.",
+          "whyItMatters": "Clear aligners are a high-margin product that started online and is now growing through clinics. Expansion into Southeast Asia tests whether an Indian consumer health brand can travel abroad.",
+          "sector": "Healthtech",
+          "amount": "₹90 Cr",
+          "stage": null,
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/news/toothsi-parent-makeo-raises-rs-90-cr-led-by-singularity-amc-12673336"
+            }
+          ],
+          "publishedAt": "2026-10-13T22:47:13+05:30"
+        }
+      ]
+    },
+    {
+      "id": "vc",
+      "title": "VC firms & funds",
+      "stories": [
+        {
+          "title": "Government deeptech fund names its first VC managers to deploy ₹7,131 Cr",
+          "summary": "The government's RDI fund announced its first group of fund managers, including Blume Ventures and Speciale Invest among other AIFs, which will put up to ₹7,131 Cr into deeptech startups.",
+          "whyItMatters": "Here the government acts like a limited partner: it gives money to private VC funds, which then pick startups. That can sharply increase the money available for hard-tech startups.",
+          "sector": "Deeptech",
+          "amount": "₹7,131 Cr",
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/rdi-fund-announces-first-cohort-of-19-fund-managers-eyes-deploying-%e2%82%b97131-cr-to-strengthen-deeptech-startups/"
+            }
+          ],
+          "publishedAt": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "exits",
+      "title": "IPOs, acquisitions & exits",
+      "stories": [
+        {
+          "title": "Freshworks to acquire Torii",
+          "summary": "Freshworks, the US-listed software company founded in India, agreed to acquire Torii to add tools that help companies manage and control their spending on AI software.",
+          "whyItMatters": "Acquisitions by listed tech companies are an important exit route for smaller SaaS startups.",
+          "sector": "SaaS",
+          "amount": null,
+          "stage": "Acquisition",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/freshworks-to-acquire-torii-to-expand-ai-spend-governance-offerings/"
+            }
+          ],
+          "publishedAt": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "startups",
+      "title": "Startup & industry moves",
+      "stories": [
+        {
+          "title": "Urban Company to consider raising fresh funds",
+          "summary": "Urban Company's board will meet on 16 October to consider raising money through a QIP, a preferential allotment or a private placement. Moneycontrol reports a target of ₹2,000 to 2,500 Cr through a QIP.",
+          "whyItMatters": "Listed companies can raise money again after their IPO. Investors will watch what the money is for and at what price the new shares are sold, since new shares reduce existing holders' stake.",
+          "sector": "Consumer services",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/news/urban-company-to-consider-fresh-fundraise-12672710"
+            }
+          ],
+          "publishedAt": "2026-10-13"
+        },
+        {
+          "title": "Adani Enterprises and Jabil sign MoU for AI data infrastructure",
+          "summary": "Adani Enterprises and electronics manufacturer Jabil signed an MoU to set up an AI-focused joint venture to build data infrastructure.",
+          "whyItMatters": "AI needs huge data centres. Large conglomerates investing here could become customers or competitors for startups in the same space.",
+          "sector": "AI infrastructure",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/adani-group-partners-with-jabil-to-build-ai-data-infrastructure/"
+            }
+          ],
+          "publishedAt": "2026-10-13"
+        },
+        {
+          "title": "Former DealShare CEO Kamaldeep Singh to lead battery-swapping firm Indofast",
+          "summary": "Kamaldeep Singh, previously CEO of DealShare, became CEO of Indofast Energy, the battery-swapping joint venture between IndianOil and SUN Mobility.",
+          "whyItMatters": "Battery swapping lets electric scooters change a flat battery in minutes. Getting a startup operator to run it shows the venture wants to scale fast.",
+          "sector": "EV",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/news/former-dealshare-ceo-kamaldeep-singh-joins-indofast-energy-as-ceo-12673159"
+            }
+          ],
+          "publishedAt": "2026-10-13T21:40:44+05:30"
+        }
+      ]
+    }
+  ],
+  "concept": {
+    "term": "QIP (Qualified Institutional Placement)",
+    "explanation": "A QIP is a way for a company that is already listed on the stock market to raise more money quickly by selling new shares only to large professional investors, such as mutual funds and insurance companies. It needs less paperwork than a public offer to everyone, so it can be done in days. Existing shareholders own a slightly smaller share of the company afterwards (this is called dilution).",
+    "example": "Urban Company is considering a QIP of about ₹2,000 to 2,500 Cr, according to Moneycontrol. If it goes ahead, mutual funds and other institutions would buy new Urban Company shares directly from the company."
+  }
+}

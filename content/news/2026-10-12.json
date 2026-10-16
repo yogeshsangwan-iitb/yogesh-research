@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-12",
+  "generatedAt": "2026-10-16T11:00:00+00:00",
+  "generatedBy": "claude:backfill",
+  "feedsRead": 2,
+  "storiesScanned": 0,
+  "tldr": [
+    "Weekend edition: the main deals, fund launches and moves from the week of 5 to 10 October.",
+    "Marico paid ₹1,012 Cr for another 24% of the company behind nutrition brand Plix.",
+    "New funds launched: Recur Club (₹500 Cr for D2C brands), Naveli Ventures (deeptech, AI, climate, space) and NABVENTURES' second fund.",
+    "Sarvam AI and Google Cloud made senior hires."
+  ],
+  "sections": [
+    {
+      "id": "funding",
+      "title": "Funding rounds",
+      "stories": [
+        {
+          "title": "Sunfox Technologies raises $7 Mn for its pocket ECG device",
+          "summary": "Medtech startup Sunfox Technologies, which makes the Spandan cardiac diagnostics platform, raised $7 Mn in a Series A co-led by Ashish Kacholia, Lashit Sanghvi, Alchemy Capital and 3one4 Capital.",
+          "whyItMatters": "Health devices that bring hospital tests to small clinics and homes are a growing bet, because India has few cardiologists outside big cities.",
+          "sector": "Healthtech",
+          "amount": "$7 Mn",
+          "stage": "Series A",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/sunfox-technologies-bags-7-mn-to-scale-cardiac-diagnostics-platform-spandan/"
+            },
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startups-this-week-oct-5-oct-10-12662210"
+            }
+          ],
+          "publishedAt": "2026-10-07"
+        },
+        {
+          "title": "Quantum computing startups QpiAI and Quanfluence raise money",
+          "summary": "Bengaluru's Quanfluence raised $10 Mn led by Chiratae Ventures, with Rainmatter by Zerodha, to build a photonic quantum computer. QpiAI took ₹50 Cr in debt from InnoVen Capital.",
+          "whyItMatters": "Quantum computing is a long, expensive bet. Venture debt (a loan instead of selling shares) lets a startup raise money without giving up more ownership.",
+          "sector": "Deeptech",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/quanfluence-raises-10-mn-to-build-full-stack-photonic-quantum-computer/"
+            },
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startups-this-week-oct-5-oct-10-12662210"
+            }
+          ],
+          "publishedAt": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "id": "vc",
+      "title": "VC firms & funds",
+      "stories": [
+        {
+          "title": "New funds: Recur Club, Naveli Ventures and NABVENTURES",
+          "summary": "Three funds launched this week. Recur Club set up a ₹500 Cr fund to give growth capital to 150 to 170 D2C brands in FY27. Navya Naveli Nanda launched Naveli Ventures, her family office's venture arm, for deeptech, AI, clean energy, space and healthcare. NABVENTURES made a ₹450 Cr first close of its second fund.",
+          "whyItMatters": "More funds means more money looking for startups. Recur Club lends against a brand's future revenue instead of buying shares, which appeals to founders who do not want to give up ownership.",
+          "sector": "Venture market",
+          "amount": null,
+          "stage": "Fund launches",
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startups-this-week-oct-5-oct-10-12662210"
+            }
+          ],
+          "publishedAt": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "id": "exits",
+      "title": "IPOs, acquisitions & exits",
+      "stories": [
+        {
+          "title": "Marico buys another 24% of Plix's parent for ₹1,012 Cr",
+          "summary": "FMCG company Marico acquired an additional 24.09% stake in Satiya Nutraceuticals, the company behind nutrition brand Plix, for ₹1,012 Cr. Separately, Hoola Health acquired early-childhood platform UpTodd.",
+          "whyItMatters": "Big consumer companies buying successful D2C brands is one of the main ways investors in those brands get their money back.",
+          "sector": "D2C",
+          "amount": "₹1,012 Cr",
+          "stage": "Acquisition",
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startups-this-week-oct-5-oct-10-12662210"
+            }
+          ],
+          "publishedAt": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "id": "startups",
+      "title": "Startup & industry moves",
+      "stories": [
+        {
+          "title": "Sarvam AI and Google Cloud make senior hires",
+          "summary": "Sarvam AI appointed Sashikumar Sreedharan as President and Chief Business Officer. Google Cloud named Amit Kumar its interim India head. ALTEN India named Prabhakar Atla CEO.",
+          "whyItMatters": "When an AI startup hires a business head, it usually means it is moving from building models to selling them to customers.",
+          "sector": "AI",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startups-this-week-oct-5-oct-10-12662210"
+            }
+          ],
+          "publishedAt": "2026-10-10"
+        },
+        {
+          "title": "Flipkart adds warehousing ahead of the Big Billion Days sale",
+          "summary": "Flipkart added 14 million cubic feet of warehouse space ahead of the festive season, with its Big Billion Days sale starting 9 October. A Bernstein report ranked Blinkit first among quick-commerce apps for product availability.",
+          "whyItMatters": "The festive sale season brings a large share of yearly e-commerce sales, so how well platforms prepare shows up in their results months later.",
+          "sector": "E-commerce",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startups-this-week-oct-5-oct-10-12662210"
+            }
+          ],
+          "publishedAt": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "id": "economy",
+      "title": "Economy, policy & markets",
+      "stories": [
+        {
+          "title": "Deeptech policy platform DeepVerse launches with 30 partners",
+          "summary": "The Startup Policy Forum launched DeepVerse, a deeptech policy platform with 30 partners including Accel, Bessemer and Lightspeed, covering 10 sectors. BofA also flagged regulatory risk for PB Fintech from IRDAI's proposed commission caps.",
+          "whyItMatters": "Deeptech startups depend heavily on government rules and funding, so VCs are organising to shape that policy.",
+          "sector": "Policy",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startups-this-week-oct-5-oct-10-12662210"
+            }
+          ],
+          "publishedAt": "2026-10-10"
+        }
+      ]
+    }
+  ],
+  "concept": {
+    "term": "Fund close",
+    "explanation": "A venture capital fund raises its money from investors called limited partners (LPs), such as banks, family offices and pension funds. A 'first close' is when the fund has collected enough commitments to start investing; it can keep raising until its 'final close'. The fund's total size is called its corpus.",
+    "example": "NABVENTURES made a first close of ₹450 Cr for its second fund, which is targeting a ₹1,500 Cr corpus. It can start backing startups now and keep raising the remaining money."
+  }
+}

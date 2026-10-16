@@ -545,79 +545,101 @@ def _version_key(name: str) -> tuple:
     return tuple(nums) + (0,) * (4 - len(nums))
 
 
-def discover_gemini_model(key: str) -> str | None:
+def list_gemini_models(key: str) -> list[str]:
+    """Flash models this key can use, newest first; 'lite' models go last (fallback only)."""
     try:
         data = _get_json(f"{GEMINI_BASE}/models?pageSize=200", {"x-goog-api-key": key})
     except Exception as exc:  # noqa: BLE001
         log(f"  could not list Gemini models: {exc}")
-        return None
+        return []
     names = []
     for m in data.get("models", []):
         name = m.get("name", "").removeprefix("models/")
         methods = m.get("supportedGenerationMethods", [])
         if "generateContent" not in methods or "flash" not in name:
             continue
-        if re.search(r"lite|image|tts|audio|live|embed|preview|exp|thinking|8b", name):
+        if re.search(r"image|tts|audio|live|embed|preview|exp|thinking|8b", name):
             continue
         names.append(name)
-    if not names:
-        return None
-    names.sort(key=_version_key, reverse=True)
-    return names[0]
+    full = sorted((n for n in names if "lite" not in n), key=_version_key, reverse=True)
+    lite = sorted((n for n in names if "lite" in n), key=_version_key, reverse=True)
+    return full + lite
+
+
+def discover_gemini_model(key: str) -> str | None:
+    models = [m for m in list_gemini_models(key) if "lite" not in m]
+    return models[0] if models else None
+
+
+BUSY_CODES = (429, 500, 502, 503, 504)
+GEMINI_WAITS = (20, 45)  # seconds to wait before retrying the same model
 
 
 def call_gemini(system: str, user: str) -> tuple[str, str]:
+    """Try Gemini models one after another. A busy model (503 'high demand') is retried
+    twice, then the next model is tried, because overload is usually per model."""
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not key:
         raise AIError("GEMINI_API_KEY is not set")
-    models = [m for m in [os.environ.get("GEMINI_MODEL", "").strip(), "gemini-flash-latest", "gemini-2.5-flash"] if m]
-    tried: set[str] = set()
+    preferred = [os.environ.get("GEMINI_MODEL", "").strip(), "gemini-flash-latest", "gemini-2.5-flash"]
+    models = [m for m in dict.fromkeys(preferred) if m]
     payload = {
         "systemInstruction": {"parts": [{"text": system}]},
         "contents": [{"role": "user", "parts": [{"text": user}]}],
         "generationConfig": {"temperature": 0.4, "responseMimeType": "application/json"},
     }
-    discovered = False
+    tried: list[str] = []
+    problems: list[str] = []
+    listed = False
     while True:
         model = next((m for m in models if m not in tried), None)
         if model is None:
-            if discovered:
+            if listed:
                 break
-            discovered = True
-            found = discover_gemini_model(key)
-            if found and found not in tried:
-                models.append(found)
-                continue
-            break
-        tried.add(model)
+            listed = True
+            extra = [m for m in list_gemini_models(key) if m not in tried][:4]
+            fallbacks = [m for m in ("gemini-flash-lite-latest",) if m not in tried and m not in extra]
+            models.extend(extra + fallbacks)
+            continue
+        tried.append(model)
         url = f"{GEMINI_BASE}/models/{urllib.parse.quote(model)}:generateContent"
-        for attempt in range(3):
+        for attempt in range(len(GEMINI_WAITS) + 1):
             try:
                 data = _post_json(url, payload, {"x-goog-api-key": key})
-                parts = data["candidates"][0]["content"]["parts"]
+                cand = (data.get("candidates") or [{}])[0]
+                parts = (cand.get("content") or {}).get("parts") or []
                 text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
                 if not text.strip():
-                    raise AIError(f"empty response: {json.dumps(data)[:300]}")
+                    reason = cand.get("finishReason") or (data.get("promptFeedback") or {}).get("blockReason") or "no text"
+                    problems.append(f"{model}: empty answer ({reason})")
+                    log(f"  {model} gave an empty answer ({reason}), trying another model")
+                    break
                 return text, f"gemini:{model}"
             except urllib.error.HTTPError as exc:
                 detail = _http_error_text(exc)
                 if exc.code == 404 or (exc.code == 400 and "model" in detail.lower() and "not" in detail.lower()):
                     log(f"  model {model} not available, trying another")
                     break
-                if exc.code in (429, 500, 502, 503, 504) and attempt < 2:
-                    wait = 30 * (attempt + 1)
-                    log(f"  Gemini {exc.code}, retrying in {wait}s")
-                    time.sleep(wait)
-                    continue
+                if exc.code in (401, 403) or (exc.code == 400 and "api key" in detail.lower()):
+                    raise AIError(f"Gemini rejected the API key (HTTP {exc.code}). Check the GEMINI_API_KEY secret.") from exc
+                if exc.code in BUSY_CODES:
+                    if attempt < len(GEMINI_WAITS):
+                        wait = GEMINI_WAITS[attempt]
+                        log(f"  {model} busy (HTTP {exc.code}), retrying in {wait}s")
+                        time.sleep(wait)
+                        continue
+                    problems.append(f"{model}: busy (HTTP {exc.code})")
+                    log(f"  {model} still busy, trying another model")
+                    break
                 raise AIError(f"Gemini HTTP {exc.code}: {detail}") from exc
-            except (KeyError, IndexError) as exc:
-                raise AIError(f"unexpected Gemini response: {exc}") from exc
             except urllib.error.URLError as exc:
-                if attempt < 2:
+                if attempt < len(GEMINI_WAITS):
                     time.sleep(15)
                     continue
-                raise AIError(f"Gemini network error: {exc}") from exc
-    raise AIError(f"no usable Gemini model (tried {sorted(tried)})")
+                problems.append(f"{model}: network error ({exc})")
+                break
+    summary = "; ".join(problems) if problems else f"tried {tried}"
+    raise AIError(f"All Gemini models failed or were busy. {summary}. The backup run later this morning will try again.")
 
 
 def call_openai(system: str, user: str) -> tuple[str, str]:
@@ -772,6 +794,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--dry-run", action="store_true", help="Fetch and filter only; print candidates")
     ap.add_argument("--fixtures", type=Path, help="Read feeds from local XML files (testing)")
     ap.add_argument("--now", help="Override current time (ISO, testing)")
+    ap.add_argument("--force", action="store_true", help="Rebuild even if today's brief already exists")
     args = ap.parse_args(argv)
 
     now = parse_date(args.now) if args.now else datetime.now(timezone.utc)
@@ -784,6 +807,9 @@ def main(argv: list[str] | None = None) -> int:
         return 2
 
     log(f"Daily Brief for {date}")
+    if (OUTPUT_DIR / f"{date}.json").exists() and not args.force and not args.dry_run:
+        log("Today's brief already exists, so this backup run has nothing to do.")
+        return 0
     log("Reading feeds…")
     items, feeds_ok = collect(load_sources(), args.fixtures)
     if feeds_ok == 0:

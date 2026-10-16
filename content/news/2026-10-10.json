@@ -1,0 +1,253 @@
+{
+  "date": "2026-10-10",
+  "generatedAt": "2026-10-16T11:00:00+00:00",
+  "generatedBy": "claude:backfill",
+  "feedsRead": 5,
+  "storiesScanned": 0,
+  "tldr": [
+    "The RBI raised its key interest rate (the repo rate) by 0.25 percentage points to 5.50%, its first increase since February 2023.",
+    "Insurance regulator IRDAI may cap the commissions paid to insurance sellers from 2027, a big worry for Policybazaar's parent and insurance brokers.",
+    "Menswear brand KISAH raised ₹35.9 Cr from Fireside Ventures, and MSME lender NeoGrowth raised ₹85 Cr led by Dutch lender FMO.",
+    "NABARD's venture arm made the first close of its second fund at ₹450 Cr, aiming for ₹1,500 Cr for agri and rural startups."
+  ],
+  "sections": [
+    {
+      "id": "funding",
+      "title": "Funding rounds",
+      "stories": [
+        {
+          "title": "Menswear brand KISAH raises ₹35.9 Cr in its first big funding round",
+          "summary": "KISAH, a Kolkata menswear and kidswear brand that sells on Myntra, Amazon, AJIO, Nykaa, its own website and 12 stores, raised ₹35.9 Cr in a Series A led by Fireside Ventures. The deal values it at about ₹211 Cr. It plans to reach about 100 stores and expects FY27 revenue above ₹100 Cr, up from ₹65 Cr in FY26.",
+          "whyItMatters": "A Series A is usually the first round from professional investors. Fireside is a well-known consumer-brand fund, and the plan to let franchise partners fund later stores is a way to grow without burning investors' money.",
+          "sector": "Fashion",
+          "amount": "₹35.9 Cr",
+          "stage": "Series A",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/menswear-brand-kisah-nets-%e2%82%b935-9-cr-to-scale-retail-footprint/"
+            }
+          ],
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "title": "MSME lender NeoGrowth raises ₹85 Cr led by Dutch development bank FMO",
+          "summary": "NeoGrowth, a Mumbai lender that gives collateral-free loans of ₹5 to 75 lakh to small businesses, raised ₹85 Cr in a mix of equity and debt. FMO led the round with LeapFrog Investments. It manages about ₹2,000 Cr of loans and will use the money to expand digital lending.",
+          "whyItMatters": "Lenders need fresh capital to keep lending, because every loan uses up some of their own money. Development banks like FMO often back lenders that bring credit to small businesses.",
+          "sector": "Fintech",
+          "amount": "₹85 Cr",
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/neogrowth-raises-%e2%82%b985-cr-to-expand-digital-lending-capabilities/"
+            }
+          ],
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "title": "DailyObjects raises ₹332 Cr at a ₹1,050 Cr valuation",
+          "summary": "Lifestyle accessories brand DailyObjects raised about $34.3 Mn (₹332 Cr) in a Series C, which included both new shares and existing shares sold by earlier holders. It values the company at ₹1,050 Cr. The brand has nine stores and wants 150 in five years and ₹400 Cr in revenue in FY27.",
+          "whyItMatters": "When a round includes 'secondary' shares, some early investors or employees are cashing out. It was the biggest Indian startup round of the week.",
+          "sector": "Consumer",
+          "amount": "₹332 Cr",
+          "stage": "Series C",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/indias-satcom-battlefield-rbis-new-fema-rules-more/"
+            },
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startups-this-week-oct-5-oct-10-12662210"
+            }
+          ],
+          "publishedAt": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "vc",
+      "title": "VC firms & funds",
+      "stories": [
+        {
+          "title": "NABARD's venture arm closes ₹450 Cr of its new ₹1,500 Cr fund",
+          "summary": "NABVENTURES, the venture capital arm of NABARD (the government's rural development bank), made the first close of its second fund at ₹450 Cr. It is targeting ₹1,500 Cr in total, with NABARD as the anchor investor. It will back early and growth-stage startups in agritech, food, rural fintech, climate and supply chains.",
+          "whyItMatters": "A 'first close' means the fund has collected enough commitments to start investing while it keeps raising. More money for agri and rural startups helps a part of the market that private VCs often skip.",
+          "sector": "Agritech",
+          "amount": "₹450 Cr",
+          "stage": "Fund first close",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/nabventures-marks-first-close-of-%e2%82%b91500-cr-fund-at-%e2%82%b9450-cr/"
+            }
+          ],
+          "publishedAt": "2026-10-08"
+        }
+      ]
+    },
+    {
+      "id": "startups",
+      "title": "Startup & industry moves",
+      "stories": [
+        {
+          "title": "Bewakoof's revenue grows 41% but its loss widens to ₹87.4 Cr",
+          "summary": "Online fashion brand Bewakoof, majority-owned by Aditya Birla Fashion and Retail, grew FY26 revenue 40.6% to ₹243.1 Cr. Its net loss rose 19.4% to ₹87.4 Cr as purchases, depreciation and marketing costs climbed. Founder Prabhkiran Singh had said he would step down at the end of March 2026.",
+          "whyItMatters": "Growth that costs more than it earns is a common D2C problem. Investors watch whether losses shrink as a brand gets bigger; here they grew.",
+          "sector": "D2C",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/bewakoofs-fy26-net-loss-jumps-nearly-20-to-%e2%82%b987-4-cr-revenue-crosses-%e2%82%b9200-cr-mark/"
+            }
+          ],
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "title": "Amazon cuts at least 100 jobs in India in a new round of layoffs",
+          "summary": "Amazon laid off at least 100 employees in India, mainly in retail and customer service, as part of global cuts of fewer than 1,000 roles in its Stores business. It is Amazon's third round of India cuts since November 2025.",
+          "whyItMatters": "Big tech layoffs free up experienced people who often join or start startups, and they show where large companies are cutting costs.",
+          "sector": "E-commerce",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/amazon-layoffs-at-least-100-employees-in-india-hit-by-latest-global-job-cuts/"
+            }
+          ],
+          "publishedAt": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "economy",
+      "title": "Economy, policy & markets",
+      "stories": [
+        {
+          "title": "RBI raises the repo rate to 5.50%, its first hike since February 2023",
+          "summary": "The Reserve Bank of India raised the repo rate, the rate at which it lends to banks, by 0.25 percentage points to 5.50%, amid rising inflation risks.",
+          "whyItMatters": "When the repo rate goes up, loans get more expensive for everyone, including startups and the lenders that fund them. Investors also tend to pay less for fast-growing, loss-making companies when interest rates rise.",
+          "sector": "Macro",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Angel One",
+              "url": "https://www.angelone.in/news/economy/rbi-increases-repo-rate-to-5-50-first-hike-since-february-2023"
+            },
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/new-age-tech-stocks-gain-this-week-mobikwik-surges-25-and-physicswallah-20/"
+            }
+          ],
+          "publishedAt": null
+        },
+        {
+          "title": "IRDAI may cap insurance commissions from 2027",
+          "summary": "The insurance regulator IRDAI is considering limits on the commission insurers can pay to people and platforms that sell their policies, possibly from January or April 2027, along with tighter limits on insurers' expenses. Feedback is open until 25 October. Shares of Policybazaar's parent PB Fintech and of Turtlemint have fallen more than 47% since the proposal, and brokers warn of a 60 to 70% revenue hit.",
+          "whyItMatters": "Insurtech platforms earn mainly from commissions, so a cap directly cuts their revenue. Regulation risk like this can change the value of a whole sector overnight.",
+          "sector": "Insurtech",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/irdai-mulls-introducing-insurance-commission-caps-from-january-2027/"
+            }
+          ],
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "title": "New RBI forex rules change how software and services exports are reported",
+          "summary": "New foreign exchange rules from the RBI, in force since 1 October, bring goods, software and services under one reporting system. Service exporters such as SaaS companies, freelancers and creators must now declare exports through their bank, and must bring the money into India within nine months.",
+          "whyItMatters": "Many Indian startups sell software abroad. Extra paperwork and deadlines on collecting payments affect their cash flow and compliance costs.",
+          "sector": "Policy",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/indias-satcom-battlefield-rbis-new-fema-rules-more/"
+            }
+          ],
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "title": "Government considers delaying UPI fees for merchants to 2027",
+          "summary": "The government is considering postponing a proposed fee (MDR) on some UPI payments to merchants until January 2027 after pushback from retailers. The earlier plan proposed a 0.4% fee on merchant payments above ₹2,000. Shares of Paytm, Pine Labs and MobiKwik fell on the reports.",
+          "whyItMatters": "A merchant fee on UPI would give payment companies a way to earn money from UPI, which is free today. Any delay pushes back that revenue.",
+          "sector": "Fintech",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/indias-satcom-battlefield-rbis-new-fema-rules-more/"
+            }
+          ],
+          "publishedAt": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "title": "Global VC",
+      "stories": [
+        {
+          "title": "Sequoia backs robot-training data startup Mecka AI with $60M",
+          "summary": "Mecka AI pays people to record everyday tasks so the movement data can be used to train humanoid and other robots. It raised $60M from Sequoia.",
+          "whyItMatters": "Robots need huge amounts of real-world training data, so investors are funding the 'data layer' for robotics, much as data companies grew alongside language AI.",
+          "sector": "Robotics",
+          "amount": "$60M",
+          "stage": null,
+          "links": [
+            {
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/07/robot-data-startup-mecka-ai-nabs-60m-from-sequoia/"
+            }
+          ],
+          "publishedAt": "2026-10-07T23:36:57+00:00"
+        },
+        {
+          "title": "Endeavor Catalyst raises a $320M fund for founders outside Silicon Valley",
+          "summary": "Endeavor Catalyst raised $320M to back founders outside Silicon Valley. Half of its profits go to the nonprofit Endeavor, which finds the founders.",
+          "whyItMatters": "Funds focused on emerging markets, including India, are a source of growth capital beyond the usual US investors.",
+          "sector": "Venture market",
+          "amount": "$320M",
+          "stage": "Fund",
+          "links": [
+            {
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/07/while-vcs-crowd-into-san-francisco-endeavor-catalyst-raises-320m-for-founders-elsewhere/"
+            }
+          ],
+          "publishedAt": "2026-10-07T22:59:16+00:00"
+        },
+        {
+          "title": "Vesta raises $30M for AI agents that help mortgage lenders",
+          "summary": "Vesta, which makes AI-native software for mortgage lenders, raised $30M in a round led by Conversion Capital.",
+          "whyItMatters": "AI agents that do back-office work in finance are one of the most funded areas in software right now.",
+          "sector": "Fintech",
+          "amount": "$30M",
+          "stage": null,
+          "links": [
+            {
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/"
+            }
+          ],
+          "publishedAt": "2026-10-08T12:00:00+00:00"
+        }
+      ]
+    }
+  ],
+  "concept": {
+    "term": "Repo rate",
+    "explanation": "The repo rate is the interest rate at which the Reserve Bank of India lends money to banks for short periods. Banks use it as a base for the rates they charge their own customers. When the RBI raises the repo rate, borrowing becomes more expensive across the economy; when it cuts the rate, borrowing becomes cheaper. The RBI raises rates mainly to slow down rising prices (inflation).",
+    "example": "This week the RBI raised the repo rate from 5.25% to 5.50%. A startup or NBFC that borrows from banks will now likely pay a little more interest on new loans."
+  }
+}

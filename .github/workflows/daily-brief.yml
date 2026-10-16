@@ -5,11 +5,19 @@ name: Daily Brief
 
 on:
   schedule:
-    # 01:15 UTC = 06:45 AM India time, every day.
-    # (GitHub can start scheduled runs a few minutes late at busy times.)
-    - cron: "15 1 * * *"
+    # Times are UTC. 01:15 UTC = 06:45 AM India time (main run).
+    # The two later runs are backups: they do nothing if today's brief already exists,
+    # and retry if the AI was too busy earlier. GitHub may start runs a few minutes late.
+    - cron: "15 1 * * *"   # 06:45 IST
+    - cron: "45 2 * * *"   # 08:15 IST, backup
+    - cron: "15 4 * * *"   # 09:45 IST, backup
   # Lets you run it by hand: GitHub → Actions → Daily Brief → Run workflow
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Rebuild today's brief even if it already exists"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -38,7 +46,13 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
           AI_PROVIDER: ${{ vars.AI_PROVIDER }}
-        run: python scripts/news/build_brief.py
+          FORCE: ${{ inputs.force }}
+        run: |
+          if [ "$FORCE" = "true" ]; then
+            python scripts/news/build_brief.py --force
+          else
+            python scripts/news/build_brief.py
+          fi
 
       - name: Save the brief to the repo
         id: commit
