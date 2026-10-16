@@ -1,15 +1,14 @@
 {
   "date": "2026-10-16",
-  "generatedAt": "2026-10-16T09:30:00+00:00",
-  "generatedBy": "claude:first-edition",
-  "feedsRead": 4,
-  "storiesScanned": 47,
+  "generatedAt": "2026-10-16T10:30:04+00:00",
+  "generatedBy": "gemini:gemini-flash-latest",
+  "feedsRead": 14,
+  "storiesScanned": 484,
   "tldr": [
-    "Two IPOs opened to very different demand: Zetwerk's ₹5,012 Cr issue was 23% subscribed on day one, Tonbo Imaging's ₹852 Cr issue about 4 times.",
-    "Flipkart and Udaan both grew revenue in FY26 and lost less money, but Udaan's accounts carry a going-concern warning.",
-    "SEBI wants to tighten the rules for small-company (SME) IPOs and is taking public comments until 4 November.",
-    "Robotics startup Origin came out of stealth with $20 Mn from Accel and Zacua Ventures.",
-    "Globally, 38 startups became unicorns in September, the busiest month of 2026 so far."
+    "Jio Platforms gears up for its record ₹30,213 crore IPO with Meta and Google sitting on huge paper profits.",
+    "Anthropic faces valuation cut from $2 trillion to $1.5 trillion alongside calls to postpone its listing.",
+    "Indian robotics startup Origin bags $20 million from Accel and Zacua to automate construction work.",
+    "Concerns mount over AI infrastructure after CoreWeave's $50 billion debt load sparks a bond sell-off."
   ],
   "sections": [
     {
@@ -17,19 +16,97 @@
       "title": "Funding rounds",
       "stories": [
         {
-          "title": "Origin raises $20 Mn to build construction robots",
-          "summary": "Origin, a robotics startup that had been working quietly (in 'stealth'), announced $20 Mn of funding co-led by Accel and Zacua Ventures. It builds robots that finish walls on construction sites, and will use the money to grow and run trial projects in the US and Europe.",
-          "whyItMatters": "Construction is a huge industry that still runs mostly on manual labour, so investors are betting robots can take on repetitive site work. Accel backing it signals that big funds see real business, not just research, in physical-world AI.",
-          "sector": "Robotics",
-          "amount": "$20 Mn",
+          "title": "Origin raises $20 million to deploy autonomous construction robots",
+          "summary": "Robotics startup Origin emerged from stealth mode after raising $20 million (around ₹189 crore) in a round co-led by Accel and Zacua. The company builds autonomous construction robots and aims to deploy 150 units across the US and Europe on a subscription model.",
+          "whyItMatters": "Labour shortages in western markets make hardware-as-a-service models attractive, giving deeptech robotics startups scalable recurring revenue potential.",
+          "sector": "Deeptech",
+          "amount": "$20M",
           "stage": null,
           "links": [
             {
               "source": "Inc42",
               "url": "https://inc42.com/buzz/origin-bags-20-mn-to-build-autonomous-construction-robots/"
+            },
+            {
+              "source": "Mint Companies",
+              "url": "https://www.livemint.com/companies/start-ups/origin-raises-20-million-from-accel-zacua-to-scale-construction-robotics-in-us-europe-11792047136480.html"
             }
           ],
           "publishedAt": "2026-10-15T19:15:59+00:00"
+        },
+        {
+          "title": "RapidCanvas secures $29 million Series B led by Vertex Ventures",
+          "summary": "AI startup RapidCanvas raised $29 million in a Series B funding round led by Vertex Ventures SEA & India. The company pairs its AI platform with dedicated engineers to create custom enterprise applications and will use the capital to grow its sales and engineering teams.",
+          "whyItMatters": "Investors are backing AI-first service models as modern alternatives to traditional IT consulting firms, combining software platforms with execution support.",
+          "sector": "AI",
+          "amount": "$29M",
+          "stage": "Series B",
+          "links": [
+            {
+              "source": "YourStory",
+              "url": "https://yourstory.com/2026/10/ai-execution-company-rapidcanvas-raises-29m-in-series-b"
+            },
+            {
+              "source": "Mint Companies",
+              "url": "https://www.livemint.com/companies/start-ups/ai-startup-rapidcanvas-raises-29-million-led-by-vertex-ventures-11792130109060.html"
+            }
+          ],
+          "publishedAt": "2026-10-16T09:55:30+00:00"
+        },
+        {
+          "title": "Confido Health bags $12.5 million to automate healthcare administration",
+          "summary": "US-based healthtech startup Confido Health raised $12.5 million (around ₹119 crore) in a Series A extension round. The company uses artificial intelligence to streamline and automate back-office administrative tasks for healthcare providers.",
+          "whyItMatters": "Administrative overhead is one of the biggest cost centers in healthcare, making AI automation tools high-priority enterprise software purchases.",
+          "sector": "Healthtech",
+          "amount": "$12.5M",
+          "stage": "Series A",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/confido-health-raises-12-5-mn-to-automate-healthcare-administration-with-ai/"
+            }
+          ],
+          "publishedAt": "2026-10-15T07:58:07+00:00"
+        },
+        {
+          "title": "Shamrock AI secures $5 million seed round led by Endiya",
+          "summary": "Enterprise software startup Shamrock AI raised $5 million (about ₹47.4 crore) in seed funding led by Endiya Partners. The startup helps businesses deploy and manage autonomous AI agents reliably within their existing operations.",
+          "whyItMatters": "While building AI agents is getting easier, making them dependable enough for enterprise use remains a major bottleneck that early-stage VCs want to solve.",
+          "sector": "Enterprise AI",
+          "amount": "$5M",
+          "stage": "Seed",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/shamrock-ai-bags-5-mn-to-help-enterprises-deploy-ai-agents-reliably/"
+            }
+          ],
+          "publishedAt": "2026-10-15T05:54:36+00:00"
+        }
+      ]
+    },
+    {
+      "id": "vc",
+      "title": "VC firms & funds",
+      "stories": [
+        {
+          "title": "Peak XV increases bet sizes as Indian founders pursue global AI",
+          "summary": "Peak XV Managing Director Mohit Bhatnagar announced that the venture firm is writing bigger cheques for ambitious Indian startups. Speaking at TechSparks 2026, industry leaders noted that solving domestic problems in healthcare, education, and services offers a multi-trillion dollar runway for Indian AI startups to expand globally.",
+          "whyItMatters": "Top VC firms are moving beyond incremental SaaS bets to back higher-risk, AI-native Indian founders targeting worldwide markets from day one.",
+          "sector": "Venture Capital",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "YourStory",
+              "url": "https://yourstory.com/2026/10/ambition-of-indian-founders-has-grown-bigger-mohit-bhatnagar-of-peak-xv"
+            },
+            {
+              "source": "YourStory",
+              "url": "https://yourstory.com/2026/10/indias-ai-opportunity-could-run-trillions-dollars-creating-new-possibilities-startups"
+            }
+          ],
+          "publishedAt": "2026-10-16T06:53:49+00:00"
         }
       ]
     },
@@ -38,42 +115,96 @@
       "title": "IPOs, acquisitions & exits",
       "stories": [
         {
-          "title": "Zetwerk's IPO gets a slow start: 23% subscribed on day one",
-          "summary": "Zetwerk, a manufacturing marketplace startup, is raising ₹5,012 Cr in its IPO (its first sale of shares to the public). On the first day, bids covered only about 23% of the shares on offer. Large institutional investors (QIBs) showed the most interest, and the issue stays open until 19 October.",
-          "whyItMatters": "An IPO is how early investors like VCs finally turn their stake into cash. Weak early demand can mean investors think the price is too high, which affects how much those backers make. Many IPOs fill up mostly on the last day, so watch the final number.",
-          "sector": "Manufacturing",
-          "amount": "₹5,012 Cr",
+          "title": "Jio Platforms readies landmark ₹30,213 crore IPO as early backers hold",
+          "summary": "Reliance Jio Platforms is launching its mega IPO scheduled for October 21-23, targeting to raise up to ₹30,213 crore at a ₹10.3 lakh crore valuation. Early strategic investors Meta and Google hold nearly ₹1 lakh crore in paper profits and are not selling their stakes, while leadership stated broadband and digital services will drive upcoming growth.",
+          "whyItMatters": "Jio's public debut sets a major liquidity benchmark for India's digital ecosystem and proves large tech conglomerates can generate massive returns for early minority backers.",
+          "sector": "Telecom",
+          "amount": "₹30,213 Cr",
+          "stage": "IPO",
+          "links": [
+            {
+              "source": "ET Markets",
+              "url": "https://economictimes.indiatimes.com/markets/stocks/news/jio-ipo-meta-google-sit-on-nearly-1-lakh-crore-paper-profit-neither-is-selling/articleshow/134982204.cms"
+            },
+            {
+              "source": "ET Markets",
+              "url": "https://economictimes.indiatimes.com/markets/stocks/news/jio-ipo-gmp-at-20-grey-market-signals-rs-220-premium-as-brokerages-say-subscribe/articleshow/134985658.cms"
+            },
+            {
+              "source": "Mint Markets",
+              "url": "https://www.livemint.com/market/stock-market-news/reliance-industries-share-price-falls-2-5-despite-jio-ipo-buzz-what-should-mukesh-ambani-stock-investors-do-11792125705564.html"
+            }
+          ],
+          "publishedAt": "2026-10-16T09:03:49+00:00"
+        },
+        {
+          "title": "Tonbo Imaging IPO sees massive demand despite FY26 profit drop",
+          "summary": "Defence tech manufacturer Tonbo Imaging's ₹852.18 crore IPO was booked nearly 7 times on its second bidding day, driven by strong institutional demand. However, the offer-for-sale comes amid a decline in the company's FY26 revenue and profits despite rising global demand for military optical equipment.",
+          "whyItMatters": "Public markets are showing strong appetite for deeptech and defence hardware, giving early VC investors clear exit windows even when recent financials fluctuate.",
+          "sector": "Defence Tech",
+          "amount": "₹852.18 Cr",
           "stage": "IPO",
           "links": [
             {
               "source": "Inc42",
-              "url": "https://inc42.com/buzz/zetwerk-ipo-subscribed-8-on-day-1-so-far/"
+              "url": "https://inc42.com/features/tonbo-imaging-ipo-gets-a-strong-start-but-does-growth-justify-its-valuation/"
+            },
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/tonbo-imaging-ipo-oversubscribed-nearly-7x-on-day-2-so-far/"
+            },
+            {
+              "source": "ET Markets",
+              "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/tonbo-imaging-india-ipo-day-2-gmp-at-71-issue-subscribed-4x-check-key-details/articleshow/134981885.cms"
             }
           ],
-          "publishedAt": "2026-10-15T13:36:52+00:00"
+          "publishedAt": "2026-10-16T09:45:45+00:00"
         },
         {
-          "title": "Defence tech firm Tonbo Imaging's IPO is 4 times subscribed on day one",
-          "summary": "Tonbo Imaging, which makes imaging technology for defence, is raising ₹852 Cr through its IPO. On day one, investors bid for about four times the shares available. Most of the demand came from wealthy individual and corporate investors (called NIIs).",
-          "whyItMatters": "Strong demand for a defence tech listing shows public-market investors are excited about this sector. That makes it easier for VCs funding younger defence startups to believe they will have a good way to exit later.",
-          "sector": "Defence tech",
-          "amount": "₹852 Cr",
+          "title": "Zetwerk's ₹5,012 crore IPO reaches 27% subscription on Day 2",
+          "summary": "B2B contract manufacturing unicorn Zetwerk saw its ₹5,012.3 crore IPO reach 27% total subscription on day two. Both the retail and qualified institutional buyer categories were subscribed roughly 32% each.",
+          "whyItMatters": "Zetwerk is one of India's biggest venture-funded manufacturing startups testing public market appetite, serving as a bellwether for other industrial B2B unicorns.",
+          "sector": "B2B",
+          "amount": "₹5,012.3 Cr",
           "stage": "IPO",
           "links": [
             {
               "source": "Inc42",
-              "url": "https://inc42.com/buzz/tonbo-imaging-ipo-subscribed-1-47x-on-day-1-so-far-niis-lead-demand/"
+              "url": "https://inc42.com/buzz/zetwerk-ipo-subscribed-27-on-day-2-so-far-qib-retail-portions-booked-32-each/"
             }
           ],
-          "publishedAt": "2026-10-15T13:15:24+00:00"
+          "publishedAt": "2026-10-16T09:32:27+00:00"
         },
         {
-          "title": "Goldman Sachs sells ₹169 Cr of Eternal shares in a block deal",
-          "summary": "Goldman Sachs sold about 53.4 lakh shares of Eternal (the company behind Zomato and Blinkit) worth roughly ₹169 Cr in one large trade, called a block deal. The shares were sold at a discount to the previous day's closing price, and an affiliate of Bank of America bought them.",
-          "whyItMatters": "Block deals are how big holders sell a large stake in one go without crashing the share price. Watching who sells and who buys listed startups tells you how professional investors currently value the sector.",
-          "sector": "Consumer internet",
+          "title": "Fairfax plans ₹52,878 crore IDBI Bank acquisition and financial overhaul",
+          "summary": "Canada-based Fairfax Financial Holdings is set to acquire a 60.72% stake in IDBI Bank for approximately ₹52,878 crore, pending central bank approval. Following the buyout, Fairfax plans to fold its stakes in insurance firm Digit and IIFL Capital into the bank to create a broad financial services group.",
+          "whyItMatters": "Large buyouts of state-backed lenders by foreign private investors create massive consolidated platforms that can alter startup financing and insurance distribution.",
+          "sector": "Banking",
+          "amount": "₹52,878 Cr",
+          "stage": "Acquisition",
+          "links": [
+            {
+              "source": "ET Industry",
+              "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/idbi-bank-sale-to-fairfax-enters-final-lap-rbi-nod-now-key-dipam/articleshow/134990078.cms"
+            },
+            {
+              "source": "Mint Companies",
+              "url": "https://www.livemint.com/companies/news/fairfax-to-bring-iifl-capital-digit-under-idbi-bank-after-rs-52-878-crore-acquisition-build-financial-services-group-11792069285653.html"
+            },
+            {
+              "source": "ET Banking & Finance",
+              "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/fairfax-plans-to-bring-digit-iifl-capital-under-idbi-bank/articleshow/134963940.cms"
+            }
+          ],
+          "publishedAt": "2026-10-16T10:03:10+00:00"
+        },
+        {
+          "title": "Goldman Sachs offloads ₹169 crore worth of Eternal shares",
+          "summary": "Global financial firm Goldman Sachs sold 53.4 lakh shares in food delivery giant Eternal via a block deal valued at ₹169 crore. A block deal is a large, privately negotiated trade between two parties executed directly on the stock exchange.",
+          "whyItMatters": "Institutional secondary sales reflect late-stage investors locking in returns after substantial share price run-ups, opening up entry points for new public market funds.",
+          "sector": "Foodtech",
           "amount": "₹169 Cr",
-          "stage": null,
+          "stage": "Secondary",
           "links": [
             {
               "source": "Inc42",
@@ -83,34 +214,34 @@
           "publishedAt": "2026-10-15T22:37:13+00:00"
         },
         {
-          "title": "Fairfax plans to move its Go Digit stake to IDBI Bank",
-          "summary": "Fairfax Financial has proposed shifting its holdings in Go Digit's insurance businesses to IDBI Bank, and Fairfax India proposed a similar move for its stake in IIFL Capital. This follows Fairfax being chosen as the strategic buyer of IDBI Bank. Regulators still need to approve the plans.",
-          "whyItMatters": "Go Digit is an insurtech that is now listed on the stock market. Large owners reshuffling their stakes can change who controls a company and how its shares trade, which matters to every other investor in it.",
-          "sector": "Insurtech",
-          "amount": null,
-          "stage": null,
+          "title": "Fusion CX ₹702 crore IPO enters final day of bidding",
+          "summary": "Customer experience firm Fusion CX entered the last day of its ₹702 crore IPO after getting subscribed 1.1 times on day two. The company plans to use the majority of the proceeds to clear outstanding debt and invest in technology upgrades.",
+          "whyItMatters": "Traditional customer support providers are rushing to public markets to raise capital for upgrading legacy systems into AI-driven service workflows.",
+          "sector": "IT & Services",
+          "amount": "₹702 Cr",
+          "stage": "IPO",
           "links": [
             {
-              "source": "Inc42",
-              "url": "https://inc42.com/buzz/fairfax-proposes-to-transfer-go-digit-stake-to-idbi-bank/"
+              "source": "ET Markets",
+              "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/fusion-cx-ipo-day-3-check-gmp-subscription-status-should-you-apply/articleshow/134981321.cms"
             }
           ],
-          "publishedAt": "2026-10-15T09:57:52+00:00"
+          "publishedAt": "2026-10-16T03:26:28+00:00"
         },
         {
-          "title": "Jio says new services, not price hikes, will grow revenue ahead of its IPO",
-          "summary": "Akash Ambani said Jio plans to earn more from each customer by selling new services rather than raising mobile tariffs. The comments come as Jio gets closer to what is expected to be a record-sized IPO.",
-          "whyItMatters": "A record IPO sets the mood for the whole market. If it goes well, investors are more willing to buy into other large Indian tech listings, which helps VC-backed companies planning to go public.",
-          "sector": "Telecom",
-          "amount": null,
-          "stage": "Pre-IPO",
+          "title": "Sahajanand Medical Technologies opens ₹475 crore IPO",
+          "summary": "Medical device manufacturer Sahajanand Medical Technologies launched a ₹475.48 crore secondary share sale priced between ₹327 and ₹344 per share. The company reported a 175% surge in net profit to ₹69 crore for FY26 on the back of steady top-line growth.",
+          "whyItMatters": "Strong profitability growth makes domestic healthcare and medical manufacturing startups attractive candidates for clean secondary exits by early investors.",
+          "sector": "Medtech",
+          "amount": "₹475.48 Cr",
+          "stage": "IPO",
           "links": [
             {
-              "source": "YourStory",
-              "url": "https://yourstory.com/2026/10/jios-akash-ambani-says-services-not-tariff-hikes-to-drive-revenue-as-record-ipo-nears"
+              "source": "ET Markets",
+              "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/sahajanand-medical-technologies-ipo-day-2-check-gmp-subscription-status-and-key-details/articleshow/134981288.cms"
             }
           ],
-          "publishedAt": "2026-10-15T13:07:07+00:00"
+          "publishedAt": "2026-10-16T03:21:17+00:00"
         }
       ]
     },
@@ -119,25 +250,10 @@
       "title": "Startup & industry moves",
       "stories": [
         {
-          "title": "Flipkart's FY26 revenue nears ₹1.5 lakh Cr as losses shrink",
-          "summary": "Flipkart Group's total revenue for FY26 grew about 18%, to nearly ₹1.5 lakh Cr, and its loss narrowed slightly to ₹8,468 Cr. But its main shopping business for consumers (the B2C arm) saw revenue fall and losses widen.",
-          "whyItMatters": "Flipkart is expected to go public eventually. Investors look for a path to profit before an IPO, so a shrinking loss is a good sign, while the weaker consumer business is the part they will question.",
-          "sector": "E-commerce",
-          "amount": null,
-          "stage": null,
-          "links": [
-            {
-              "source": "Inc42",
-              "url": "https://inc42.com/buzz/flipkart-group-fy26-revenue-nears-%e2%82%b91-5-lakh-cr-loss-narrows-to-%e2%82%b98468-cr/"
-            }
-          ],
-          "publishedAt": "2026-10-15T20:00:47+00:00"
-        },
-        {
-          "title": "Udaan grows revenue 13% but its accounts flag a going-concern risk",
-          "summary": "Udaan, which sells goods wholesale to small shops (B2B e-commerce), grew FY26 revenue by about 13% to ₹5,134 Cr and cut its loss to ₹852 Cr. However, its financial statements carry a 'going-concern' warning, and creditors have started legal proceedings against its parent company abroad.",
-          "whyItMatters": "A going-concern warning means auditors are unsure the company can keep operating without fresh money. For a VC, that is a red flag that outweighs revenue growth and usually means hard choices: a cheaper new round, a sale, or losses for current investors.",
-          "sector": "B2B e-commerce",
+          "title": "Udaan reports 13% revenue growth while narrowing FY26 losses",
+          "summary": "B2B wholesale platform Udaan grew its operating revenue by 12.6% to ₹5,134 crore during the financial year ending March 2026. Over the same period, the unicorn managed to trim its annual net loss down to ₹852 crore.",
+          "whyItMatters": "Late-stage B2B e-commerce firms are under intense pressure from VC backers to fix unit economics and show clear paths to profitability ahead of prospective IPOs.",
+          "sector": "B2B E-commerce",
           "amount": null,
           "stage": null,
           "links": [
@@ -149,49 +265,49 @@
           "publishedAt": "2026-10-15T10:23:34+00:00"
         },
         {
-          "title": "Shopify reportedly plans to bring Shop Pay checkout to India",
-          "summary": "According to sources, Shopify plans to launch Shop Pay, its fast one-click checkout, in India by early 2027, possibly working through local payment partners. That would put it up against Indian checkout startups such as GoKwik and Shopflo.",
-          "whyItMatters": "When a global giant enters a market, VC-backed local players face a much tougher fight. Investors in GoKwik and Shopflo will watch whether they can hold on to online brands as customers.",
-          "sector": "Fintech",
+          "title": "E2E Networks posts ₹73 crore profit as quarterly revenue surges 411%",
+          "summary": "Cloud infrastructure company E2E Networks reported a 411% jump in second-quarter revenue to ₹223.8 crore, up from ₹43.8 crore a year earlier. The strong top-line expansion helped the business swing to a net profit of ₹73 crore.",
+          "whyItMatters": "Domestic cloud infrastructure and GPU providers are seeing explosive demand as Indian AI startups scale computing capacity locally.",
+          "sector": "Cloud",
           "amount": null,
           "stage": null,
           "links": [
             {
               "source": "Inc42",
-              "url": "https://inc42.com/buzz/shopify-to-bring-accelerated-checkout-service-shop-pay-to-india/"
+              "url": "https://inc42.com/buzz/e2e-networks-swings-to-%e2%82%b973-cr-profit-in-q2-revenue-jumps-411-yoy/"
             }
           ],
-          "publishedAt": "2026-10-15T12:59:36+00:00"
+          "publishedAt": "2026-10-16T08:46:33+00:00"
         },
         {
-          "title": "Swiggy targets the 90% of Indians who have never ordered food online",
-          "summary": "Swiggy's food delivery CEO Rohit Kapoor said growth will come from people who have never used food delivery, especially price-conscious and younger customers, and from expanding into more cities. He sees AI mainly as a way to make ordering more convenient.",
-          "whyItMatters": "This is a market-size argument: a business that has only reached 10% of potential users still has lots of room to grow. Judging how big a market really is, and how fast a company can reach it, is a core VC skill.",
-          "sector": "Consumer",
+          "title": "Myntra falls into ₹579 crore loss as FY26 sales drop",
+          "summary": "Online fashion retailer Myntra posted a net loss of ₹579 crore for FY26 alongside a 13% drop in revenue, reversing its profitable run from FY25. The downturn coincides with a leadership handover, with Sharon Pais taking the reins from former CEO Nandita Sinha.",
+          "whyItMatters": "Fashion e-commerce faces slowing consumer demand and high return rates, showing that even dominant subsidiaries struggle to hold profitability without constant discounting.",
+          "sector": "E-commerce",
           "amount": null,
           "stage": null,
           "links": [
             {
-              "source": "YourStory",
-              "url": "https://yourstory.com/2026/10/swiggys-next-big-bet-90-of-indians-yet-try-food-delivery"
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/technology/myntra-swings-to-net-loss-of-rs-579-crore-in-fy26-revenue-drops-13/articleshow/134965022.cms"
             }
           ],
-          "publishedAt": "2026-10-15T12:47:45+00:00"
+          "publishedAt": "2026-10-15T10:39:04+00:00"
         },
         {
-          "title": "IIT Bombay spinout MumbaiSemi builds RF chips that work with NavIC",
-          "summary": "MumbaiSemi, a startup that came out of IIT Bombay, has built a programmable radio-frequency (RF) chip that works with India's NavIC navigation satellites as well as other global systems. It wants to become a global supplier of high-quality RF chips.",
-          "whyItMatters": "Semiconductors are a national priority, and deeptech startups born in university labs are a growing focus for Indian VCs. These companies take longer to build, but can become very hard for competitors to copy.",
-          "sector": "Deeptech",
+          "title": "Former Flipkart employees push Walmart for share option cashouts",
+          "summary": "Ex-employees of Flipkart are requesting parent firm Walmart to execute a buyback of their vested stock options. These option buyouts allow employees to convert paper shares into actual cash when a company stays private for an extended period.",
+          "whyItMatters": "Secondary liquidity programs for employee options are crucial for startup ecosystems because experienced operators often reinvest those windfalls into new angel bets.",
+          "sector": "E-commerce",
           "amount": null,
           "stage": null,
           "links": [
             {
-              "source": "YourStory",
-              "url": "https://yourstory.com/2026/10/tech30-mumbaisemi-high-quality-rf-chips"
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/newsletters/morning-dispatch/flipkart-ex-staff-push-for-esop-buyout-wipro-tech-mahindras-q2-report/articleshow/134980117.cms"
             }
           ],
-          "publishedAt": "2026-10-15T04:47:53+00:00"
+          "publishedAt": "2026-10-16T01:59:31+00:00"
         }
       ]
     },
@@ -200,10 +316,10 @@
       "title": "Economy, policy & markets",
       "stories": [
         {
-          "title": "SEBI proposes 10 big changes to SME IPO rules",
-          "summary": "SEBI, India's stock market regulator, has proposed overhauling the rules for IPOs by small and medium companies (SMEs). The changes cover how companies are valued, profit requirements, how long early shareholders must hold their shares (lock-ins), minimum bid sizes, underwriting and moving up to the main stock exchange. Anyone can comment until 4 November.",
-          "whyItMatters": "The SME exchange has become an exit route for smaller startups. Stricter rules could make that route harder and slower, which changes how investors plan their exits from small companies.",
-          "sector": "Markets",
+          "title": "SEBI floats 10 major amendments to tighten SME IPO norms",
+          "summary": "The Securities and Exchange Board of India proposed ten major regulatory updates to govern public listings on SME stock exchange platforms. The revisions aim to raise oversight and transparency following an unprecedented boom in micro-cap listings.",
+          "whyItMatters": "Tighter listing rules on SME bourses will force early-stage startups to mature their corporate governance and revenue metrics before seeking retail public capital.",
+          "sector": "Capital Markets",
           "amount": null,
           "stage": null,
           "links": [
@@ -215,19 +331,42 @@
           "publishedAt": "2026-10-15T21:49:36+00:00"
         },
         {
-          "title": "Jio Financial's quarterly profit halves even as revenue jumps 73%",
-          "summary": "Jio Financial Services earned ₹340 Cr in profit in the July to September quarter, about half of what it made a year earlier, mainly because borrowing costs rose and it received less dividend income. Revenue still grew 73%, led by lending, insurance broking and asset management.",
-          "whyItMatters": "This is a reminder that revenue growth and profit are different things. In lending businesses, the cost of borrowing money can eat into profits fast, which is exactly what investors check in fintech startups too.",
-          "sector": "Fintech",
+          "title": "Supreme Court quashes Yes Bank's ₹8,415 crore AT1 bond write-off",
+          "summary": "The Supreme Court upheld a high court order rejecting Yes Bank's controversial decision to wipe out ₹8,415 crore worth of AT1 bonds during its 2020 bailout. The ruling protects institutional and retail bondholders but places fresh balance sheet stress on the lender.",
+          "whyItMatters": "The decision clarifies the legal enforceability of hybrid capital instruments in India, which influences how banks price risk and raise regulatory growth capital.",
+          "sector": "Banking",
+          "amount": "₹8,415 Cr",
+          "stage": null,
+          "links": [
+            {
+              "source": "ET Banking & Finance",
+              "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/supreme-court-upholds-bombay-hc-ruling-quashing-yes-banks-rs-8415-crore-at1-bond-write-off/articleshow/134962412.cms"
+            },
+            {
+              "source": "Mint Companies",
+              "url": "https://www.livemint.com/companies/news/yes-bank-supreme-court-upholds-hc-order-at-1-bond-writeoff-11792042824907.html"
+            },
+            {
+              "source": "ET Industry",
+              "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/supreme-court-rules-against-yes-banks-write-off-of-rs-8415-crore-at1-bonds/articleshow/134976512.cms"
+            }
+          ],
+          "publishedAt": "2026-10-16T09:58:59+00:00"
+        },
+        {
+          "title": "Deloitte forecasts India's FY27 economic growth at 7.1% to 7.3%",
+          "summary": "Consulting firm Deloitte projected India's gross domestic product to expand between 7.1% and 7.3% in FY27. The report noted that private sector business investments are rebounding after years of growth primarily carried by public infrastructure spending and consumer buying.",
+          "whyItMatters": "A revival in private capital expenditure signals healthy corporate balance sheets, which typically boosts business-to-business startup sales and enterprise software budgets.",
+          "sector": "Macro",
           "amount": null,
           "stage": null,
           "links": [
             {
-              "source": "Inc42",
-              "url": "https://inc42.com/buzz/jio-financial-services-q2-profit-halves-yoy-to-%e2%82%b9340-cr/"
+              "source": "ET Economy",
+              "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-gdp-to-grow-7-1-7-3-in-fy27-as-private-investment-gains-momentum-deloitte/articleshow/134984228.cms"
             }
           ],
-          "publishedAt": "2026-10-15T13:16:01+00:00"
+          "publishedAt": "2026-10-16T06:06:02+00:00"
         }
       ]
     },
@@ -236,24 +375,70 @@
       "title": "Global VC",
       "stories": [
         {
-          "title": "38 new unicorns in September, the busiest month of the year",
-          "summary": "Thirty-eight startups crossed a $1 billion valuation (became 'unicorns') in September 2026, adding about $71 billion in combined value. Semiconductor, financial services and space technology companies led the list, bringing the total for 2026 to 311 new unicorns.",
-          "whyItMatters": "The number of new unicorns is a quick health check for venture capital. A busy month suggests investors are confident and willing to pay high prices, especially for chips, fintech and space.",
-          "sector": "Venture market",
-          "amount": "$71B",
+          "title": "Anthropic faces valuation pullback and IPO delay requests",
+          "summary": "AI lab Anthropic posted Q3 revenue of $16.8 billion, bringing its nine-month total to over $33 billion. However, prospective IPO investors lowered target valuation expectations from $2 trillion to around $1.5 trillion due to growth concerns, while a New York City pension fund urged postponing the listing over unaddressed safety risks.",
+          "whyItMatters": "The valuation haircut and institutional pushback signal that public investors are demanding clearer safety governance and sustainable margins from foundational AI giants.",
+          "sector": "AI",
+          "amount": null,
+          "stage": "IPO",
+          "links": [
+            {
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-q3-revenue-surges-45-to-16-8-billion-as-ai-startup-gears-up-for-2-trillion-ipo/articleshow/134956776.cms"
+            },
+            {
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/investors-temper-anthropic-ipo-valuation-expectations-over-revenue-growth-slowdown/articleshow/134980383.cms"
+            },
+            {
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/new-york-city-pension-fund-asks-anthropic-to-delay-ipo/articleshow/134982189.cms"
+            }
+          ],
+          "publishedAt": "2026-10-16T09:41:09+00:00"
+        },
+        {
+          "title": "Corporate card platform Ramp hits $60 billion valuation",
+          "summary": "Fintech unicorn Ramp reached a $60 billion valuation on the back of aggressive investments into artificial intelligence features. The company has now crossed $2 billion in annualized revenue and counts over 85,000 corporate customers.",
+          "whyItMatters": "Ramp demonstrates that vertical SaaS and spend management startups can sustain top-tier revenue growth by embedding AI directly into everyday financial operations.",
+          "sector": "Fintech",
+          "amount": null,
           "stage": null,
           "links": [
             {
-              "source": "Crunchbase News",
-              "url": "https://news.crunchbase.com/venture/september-2026-new-unicorns-semiconductors-ai-fintech-space/"
+              "source": "TechCrunch Startups",
+              "url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/"
             }
           ],
-          "publishedAt": "2026-10-14T11:00:04+00:00"
+          "publishedAt": "2026-10-15T14:47:09+00:00"
         },
         {
-          "title": "Cybersecurity startups raised $6.8B in Q3, mostly in big rounds",
-          "summary": "Investors put $6.8 billion into cybersecurity startups in July to September 2026, about 50% more than the quarter before. The rise came from larger rounds rather than more deals, and AI-focused security companies took most of the money.",
-          "whyItMatters": "More money spread over fewer, bigger deals means investors are concentrating on the companies they think will win. It is harder for small new players to raise, but the leaders get a lot of fuel.",
+          "title": "CoreWeave debt sell-off triggers investor anxiety over AI data centers",
+          "summary": "Shares and bonds of AI cloud specialist CoreWeave tumbled as its debt burden touched roughly $50 billion and borrowing yields surpassed 16%. The sell-off has raised alarms across tech markets over whether projected AI revenues can ever cover the high debt costs behind computing infrastructure.",
+          "whyItMatters": "If debt-fueled data center operators face a credit crunch, venture-backed startups could see cloud computing prices surge and compute capacity tighten.",
+          "sector": "AI Infrastructure",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/technology/coreweaves-slump-puts-spotlight-on-debt-behind-ai-boom/articleshow/134973449.cms"
+            },
+            {
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/technology/explained-why-are-credit-default-swaps-unnerving-ai-investors/articleshow/134968004.cms"
+            },
+            {
+              "source": "ET Markets",
+              "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-debt-crisis-coreweave-sell-off-rattles-tech-investors/slideshow/134985217.cms"
+            }
+          ],
+          "publishedAt": "2026-10-16T06:12:02+00:00"
+        },
+        {
+          "title": "Cybersecurity venture funding reaches $6.8 billion in Q3",
+          "summary": "Global venture investments into cybersecurity and privacy startups totaled $6.8 billion during the third quarter of 2026, marking a 50% sequential jump. The funding boom was concentrated primarily in large, later-stage rounds.",
+          "whyItMatters": "Security remains one of the most recession-proof categories in enterprise tech as generative AI introduces new vulnerabilities and compliance hurdles.",
           "sector": "Cybersecurity",
           "amount": "$6.8B",
           "stage": null,
@@ -266,41 +451,41 @@
           "publishedAt": "2026-10-15T11:00:48+00:00"
         },
         {
-          "title": "Chariot raises $10M Series A to help people fight hidden fees",
-          "summary": "Chariot Claims raised a $10M Series A round led by Silverton Partners. It works with law firms to help consumers bring claims over privacy violations, hidden fees and subscriptions that are hard to cancel.",
-          "whyItMatters": "A Series A is usually a startup's first large round of outside funding, raised once it has early proof the product works. Legal tech that turns consumer complaints into a business is a niche investors are testing.",
-          "sector": "Legal tech",
-          "amount": "$10M",
-          "stage": "Series A",
+          "title": "Cal AI acquired by MyFitnessPal after generating $30 million revenue",
+          "summary": "Consumer health application Cal AI was acquired by fitness platform MyFitnessPal for an undisclosed sum after making more than $30 million in revenue within two years. The startup's rapid growth was powered by a viral influencer marketing strategy.",
+          "whyItMatters": "Consumer AI applications can achieve massive early monetization and rapid exits with lean teams if they master organic, viral distribution channels.",
+          "sector": "Consumer",
+          "amount": null,
+          "stage": "Acquisition",
           "links": [
             {
-              "source": "Crunchbase News",
-              "url": "https://news.crunchbase.com/ai/legal-tech-chariot-raise-stop-hidden-fees-subscriptions-hang/"
+              "source": "TechCrunch Startups",
+              "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/"
             }
           ],
-          "publishedAt": "2026-10-15T11:00:31+00:00"
+          "publishedAt": "2026-10-15T23:44:56+00:00"
         },
         {
-          "title": "Stella & Dot founder raises $5M seed for AI marketing startup Marklo",
-          "summary": "Jessica Herrin, who founded Stella & Dot, raised a $5M seed round led by Forerunner for her new company, Marklo. It helps brands plan marketing campaigns using their own sales, stock and marketing data.",
-          "whyItMatters": "Investors back repeat founders more easily because they have already built a company once. A seed round is the earliest stage of VC funding, so this is a bet mostly on the founder.",
-          "sector": "AI",
-          "amount": "$5M",
-          "stage": "Seed",
+          "title": "TSMC net profit surges 69% on record AI processor demand",
+          "summary": "Taiwan Semiconductor Manufacturing Co. posted a record 69% jump in quarterly profit, easily beating market estimates. The semiconductor foundry credited relentless global enterprise demand for advanced AI processors.",
+          "whyItMatters": "Hardware manufacturing earnings remain the clearest real-time indicator of overall capital spending by big tech and foundational AI labs.",
+          "sector": "Semiconductors",
+          "amount": null,
+          "stage": null,
           "links": [
             {
-              "source": "Crunchbase News",
-              "url": "https://news.crunchbase.com/venture/founder-raises-5m-next-act-ai-marketing-startup-marklo-herrin/"
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/technology/tsmc-q3-profit-jumps-69-to-record-beating-expectations/articleshow/134958500.cms"
             }
           ],
-          "publishedAt": "2026-10-14T12:00:38+00:00"
+          "publishedAt": "2026-10-15T05:40:18+00:00"
         }
       ]
     }
   ],
   "concept": {
-    "term": "IPO subscription",
-    "explanation": "When a company goes public, it offers a fixed number of new shares, and investors place bids to buy them. 'Subscription' compares how many shares were asked for with how many were on offer. If an IPO is subscribed 1 time, demand exactly matched supply; 4 times means people wanted four times more shares than were available; 23% means only about a quarter of the shares had bids. Bids are counted separately for big institutions (QIBs), wealthy individuals and companies (NIIs) and small retail investors, because each group reads the company differently.",
-    "example": "Today, Tonbo Imaging's IPO was about 4 times subscribed on day one, while Zetwerk's was only 23% subscribed. Both are still open, and many IPOs see most of their bids arrive on the final day."
+    "term": "Paper Profit (Unrealized Gain)",
+    "explanation": "When an early investor or venture capital fund buys shares in a young company, the company's valuation often increases in subsequent funding rounds. A paper profit is the calculated gain on that investment based on the higher current valuation, but strictly on paper. Because the investor has not actually sold their shares for cash, this money is not sitting in a bank account. If the business hits trouble or the stock price drops before the investor exits, that paper profit can easily shrink or disappear.",
+    "example": "Tech giants Meta and Google have nearly ₹1 lakh crore in paper profit on their 2020 bets in Jio Platforms, but they only turn it into real money when they sell those shares."
   }
 }
