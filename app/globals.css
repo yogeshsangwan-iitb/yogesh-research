@@ -264,3 +264,23 @@ body {
 .prose-report table {
   font-variant-numeric: tabular-nums;
 }
+
+/* ------------------------------------------------------------------
+   Mobile view preview (components/ViewSwitch.tsx)
+   ------------------------------------------------------------------ */
+.view-phone {
+  width: min(400px, calc(100vw - 2rem));
+  height: min(864px, calc(100vh - 7rem));
+}
+.view-preview {
+  animation: fade 300ms ease both;
+}
+.view-preview .view-phone {
+  animation: rise 500ms var(--ease-out-soft) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .view-preview,
+  .view-preview .view-phone {
+    animation: none;
+  }
+}

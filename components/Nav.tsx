@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { SITE_NAME } from "@/lib/profile";
 
 const links = [
   { href: "/research", label: "Research" },
@@ -15,7 +16,7 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-rule bg-paper/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <Link href="/" className="group flex items-center gap-3" aria-label="Yogesh Sangwan, home">
+        <Link href="/" className="group flex items-center gap-3" aria-label={`${SITE_NAME}, home`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/avatar.png"
@@ -24,7 +25,7 @@ export default function Nav() {
             height={32}
             className="h-8 w-8 rounded-full object-cover grayscale transition duration-500 group-hover:grayscale-0"
           />
-          <span className="nav-caps hidden text-ink sm:inline">Yogesh Sangwan</span>
+          <span className="hidden text-[0.95rem] font-semibold tracking-tight text-ink sm:inline">{SITE_NAME}</span>
         </Link>
 
         <nav aria-label="Main" className="flex items-center gap-4 sm:gap-8">

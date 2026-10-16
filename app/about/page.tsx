@@ -23,7 +23,15 @@ export default function AboutPage() {
         <img src="/banner.jpg" alt="" className="h-full w-full object-cover" />
       </div>
 
-      <div className="grid gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-20">
+      <div className="relative isolate grid gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-20">
+        {/* IIT Bombay crest as a faint watermark behind the section */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/iitb-logo.png"
+          alt=""
+          aria-hidden
+          className="pointer-events-none absolute right-0 top-24 -z-10 w-[min(440px,78%)] select-none opacity-[0.07] sm:top-10 lg:right-[4%]"
+        />
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -42,7 +50,12 @@ export default function AboutPage() {
           {profileLinks.length > 0 && (
             <div className="intro-fade mt-8 flex flex-wrap gap-3">
               {profileLinks.map((l) => (
-                <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" className="btn btn-line">
+                <a
+                  key={l.label}
+                  href={l.href}
+                  {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  className="btn btn-line"
+                >
                   {l.label}
                 </a>
               ))}
