@@ -1,6 +1,6 @@
-# yogesh-research
+# 1stmillionmile
 
-Personal research site of Yogesh Sangwan: long-form research on startups and industries, plus an automatic **Daily brief** of venture capital, startup and finance news in plain English.
+Personal research site of Yogesh Sangwan (1stmillionmile): long-form research on startups and industries, plus an automatic **Daily brief** of venture capital, startup and finance news in plain English.
 
 Built with Next.js, hosted on Vercel.
 
