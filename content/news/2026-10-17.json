@@ -1,0 +1,438 @@
+{
+  "date": "2026-10-17",
+  "generatedAt": "2026-10-17T04:59:18+00:00",
+  "generatedBy": "gemini:gemini-flash-latest",
+  "feedsRead": 15,
+  "storiesScanned": 534,
+  "tldr": [
+    "Cult.fit secures SEBI's regulatory approval to raise ₹950 crore through an IPO.",
+    "Urban Company and Snabbit escalate their high-burn battle for quick on-demand home services.",
+    "Vertex Ventures leads a $29 million Series B funding round into enterprise AI platform RapidCanvas.",
+    "HSBC commits over $500 million of its $1 billion Indian startup lending fund."
+  ],
+  "sections": [
+    {
+      "id": "funding",
+      "title": "Funding rounds",
+      "stories": [
+        {
+          "title": "RapidCanvas Secures $29 Million Series B Led by Vertex Ventures",
+          "summary": "Enterprise artificial intelligence platform RapidCanvas has raised $29 million (around ₹280 crore) in a Series B round (a startup's second major institutional funding round). Vertex Ventures Southeast Asia & India led the deal, with participation from Hitachi Ventures, Accel, and Peak XV Partners. The capital will be deployed to expand its enterprise go-to-market and sales teams.",
+          "whyItMatters": "Top VCs continue directing growth capital into enterprise-focused AI software that solves tangible corporate workflows rather than speculative consumer tools.",
+          "sector": "AI / SaaS",
+          "amount": "$29M (₹280 Cr)",
+          "stage": "Series B",
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/enterprise-ai-startup-rapidcanvas-nets-29-mn-to-expand-gtm-teams/"
+            },
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/news/rapidcanvas-raises-29-mn-in-series-b-round-led-by-vertex-ventures-12681874"
+            }
+          ],
+          "publishedAt": "2026-10-16T10:27:02+00:00"
+        },
+        {
+          "title": "CapGrid Raises ₹46.28 Crore in Pre-Series B Funding",
+          "summary": "B2B manufacturing platform CapGrid raised ₹46.28 crore ($4.87 million) at a 50% valuation premium. Hero Enterprise Partner Ventures led the investment alongside returning backers Nexus Venture Partners and Anicut Capital. The startup helps industrial companies source parts and streamline manufacturing supply chains.",
+          "whyItMatters": "Securing capital at a 50% valuation hike shows that specialized industrial and supply chain tech can attract premium pricing despite broader market caution.",
+          "sector": "B2B Manufacturing",
+          "amount": "₹46.28 Cr ($4.87M)",
+          "stage": "Pre-Series B",
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/exclusive/exclusive-capgrid-kicks-off-pre-series-b-round-at-50-valuation-premium-12680865"
+            }
+          ],
+          "publishedAt": "2026-10-16T04:41:47+00:00"
+        },
+        {
+          "title": "Indian Startups Raise Over $230 Million in Second Week of October",
+          "summary": "Indian technology startups secured between $232 million and $236 million across multiple venture deals this week. Fitness brand Boldfit led individual fundraises with $41.5 million, followed by GreenCell Mobility with $34.5 million and Scimplify with $25 million. Accel and Elevation Capital were among the most active venture funds backing founders.",
+          "whyItMatters": "Although total funding fell 45% compared to the same period last year, early and growth capital is steadily circulating into consumer goods, mobility, and industrial tech.",
+          "sector": "Venture Ecosystem",
+          "amount": "$232M-$236M",
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/from-boldfit-to-origin-indian-startups-raised-about-236-mn-this-week/"
+            },
+            {
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/startups/ettech-deals-digest-boldfit-greencell-lead-as-weekly-funding-hits-232-million-down-45-on-year/articleshow/134999523.cms"
+            }
+          ],
+          "publishedAt": "2026-10-17T03:30:52+00:00"
+        },
+        {
+          "title": "Ujjivan Small Finance Bank Raises ₹409 Crore via Preferential Shares",
+          "summary": "Ujjivan Small Finance Bank approved raising ₹409 crore through a preferential share allotment to the International Finance Corporation (IFC) and three insurance companies at ₹64.73 per share. Alongside the equity raise, the lender reported a 200% year-on-year surge in second-quarter net profit to ₹365 crore.",
+          "whyItMatters": "Backing from multilateral institutions like the IFC strengthens balance sheet reserves for financial inclusion lenders serving micro-enterprises and small borrowers.",
+          "sector": "Fintech / Banking",
+          "amount": "₹409 Cr",
+          "stage": null,
+          "links": [
+            {
+              "source": "ET Markets",
+              "url": "https://economictimes.indiatimes.com/markets/stocks/news/ujjivan-sfb-to-raise-rs-409-crore-from-ifc-three-insurers/articleshow/134996772.cms"
+            }
+          ],
+          "publishedAt": "2026-10-16T13:37:46+00:00"
+        }
+      ]
+    },
+    {
+      "id": "vc",
+      "title": "VC firms & funds",
+      "stories": [
+        {
+          "title": "HSBC Deploys Half of Its $1 Billion Indian Startup Fund",
+          "summary": "British lender HSBC has deployed more than half of its $1 billion startup loan commitment in India within a year of launch. The bank reported robust debt demand across consumer tech, e-commerce, and enterprise software firms. HSBC stated it is open to expanding the allocation as demand increases.",
+          "whyItMatters": "Venture debt is emerging as a vital tool for founders seeking growth money without having to sell equity or dilute their ownership stakes at lower valuations.",
+          "sector": "Venture Debt",
+          "amount": "$1B commitment",
+          "stage": null,
+          "links": [
+            {
+              "source": "ET Industry",
+              "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/hsbc-has-used-over-half-of-1-billion-startup-fund-within-a-year-global-innovation-banking-head-david-sabow/articleshow/135002799.cms"
+            }
+          ],
+          "publishedAt": "2026-10-16T19:08:53+00:00"
+        }
+      ]
+    },
+    {
+      "id": "exits",
+      "title": "IPOs, acquisitions & exits",
+      "stories": [
+        {
+          "title": "Cult.fit Receives SEBI Approval for ₹950 Crore Initial Public Offering",
+          "summary": "Fitness and wellness company Cult.fit has received regulatory clearance from SEBI for its proposed IPO. The company plans to raise up to ₹950 crore through a fresh issue of new shares, alongside an offer for sale (OFS) of up to 17.86 crore existing shares. Cult.fit will use the capital to open new fitness centers and finance marketing campaigns.",
+          "whyItMatters": "An IPO clearance provides a crucial liquidity exit for long-term venture investors while testing whether public stock investors are willing to reward consumer health brands.",
+          "sector": "Healthtech / Fitness",
+          "amount": "₹950 Cr",
+          "stage": "IPO",
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/news/cultfit-gets-sebi-nod-for-proposed-ipo-12682917"
+            },
+            {
+              "source": "ET Markets",
+              "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/cult-fit-receives-sebi-approval-for-proposed-ipo/articleshow/134997161.cms"
+            },
+            {
+              "source": "Mint Markets",
+              "url": "https://www.livemint.com/market/ipo/cultfit-ipo-alert-fitness-major-receives-sebi-nod-for-proposed-ipo-check-ofs-fresh-issue-mix-details-11792158029624.html"
+            }
+          ],
+          "publishedAt": "2026-10-16T15:00:54+00:00"
+        },
+        {
+          "title": "Jio Platforms Readies $3.2 Billion IPO Offering Major Paper Returns",
+          "summary": "Reliance is preparing an initial public offering of up to ₹30,213 crore ($3.2 billion) for its tech and telecom arm, Jio Platforms. Early strategic backers Meta and Google could see nearly ₹1 lakh crore in combined paper profits on their investments. At the same time, Jio is expanding commercial cloud and enterprise AI collaborations with both tech giants.",
+          "whyItMatters": "Mega-offerings of this scale unlock massive returns for strategic tech backers while setting valuation benchmarks for India's digital communications infrastructure.",
+          "sector": "Telecom / Deeptech",
+          "amount": "$3.2B (₹30,213 Cr)",
+          "stage": "IPO",
+          "links": [
+            {
+              "source": "Mint Industry",
+              "url": "https://www.livemint.com/industry/telecom/will-jio-raise-tariffs-heres-what-akash-ambani-said-ahead-of-ipo-rollout-11792084902686.html"
+            },
+            {
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/technology/from-shareholders-to-partners-how-google-and-metas-jio-investments-evolved-into-an-ai-alliance/articleshow/135007212.cms"
+            },
+            {
+              "source": "ET Markets",
+              "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/jios-3-2-billion-ipo-tests-ambani-appeal-with-young-indians/articleshow/135006812.cms"
+            }
+          ],
+          "publishedAt": "2026-10-17T04:18:50+00:00"
+        },
+        {
+          "title": "Goldman Sachs Sells ₹169 Crore Stake in Zomato Parent Eternal",
+          "summary": "Global investment bank Goldman Sachs offloaded 53.37 lakh shares in Zomato and Blinkit parent Eternal for ₹168.67 crore through a block deal. Exchange filings show the shares were sold at ₹316 each, with BofA Securities picking up the entire block.",
+          "whyItMatters": "Large institutional secondary transactions show healthy institutional appetite to take over equity stakes when earlier investors seek to lock in gains.",
+          "sector": "Consumer Tech",
+          "amount": "₹168.67 Cr",
+          "stage": null,
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/news/goldman-sachs-offloads-rs-169-cr-worth-eternal-shares-bofa-securities-buys-12680811"
+            }
+          ],
+          "publishedAt": "2026-10-16T04:23:53+00:00"
+        },
+        {
+          "title": "Indian Bank Reaps ₹1,388 Crore Windfall From NSE Share Sale",
+          "summary": "State-owned Indian Bank generated a ₹1,388 crore gain by selling shares during the listing of the National Stock Exchange (NSE). This one-time exit helped increase its quarterly non-interest income by 50% to ₹3,953 crore, offsetting unrealized losses on government bonds.",
+          "whyItMatters": "Long-term pre-IPO equity holdings in core financial infrastructure can yield substantial cash payouts that shore up balance sheets during market downturns.",
+          "sector": "Capital Markets",
+          "amount": "₹1,388 Cr",
+          "stage": null,
+          "links": [
+            {
+              "source": "ET Markets",
+              "url": "https://economictimes.indiatimes.com/markets/stocks/news/indian-bank-reports-a-rs-1388-crore-gain-from-sale-of-nse-shares/articleshow/134985719.cms"
+            }
+          ],
+          "publishedAt": "2026-10-16T07:04:25+00:00"
+        }
+      ]
+    },
+    {
+      "id": "startups",
+      "title": "Startup & industry moves",
+      "stories": [
+        {
+          "title": "Urban Company Loss Reaches ₹182 Crore as Board Clears ₹2,500 Crore Raise",
+          "summary": "Urban Company recorded a net loss of ₹182 crore in Q2 FY27 even as revenue grew 41% to ₹537 crore. The deficit widened because its quick-service bet, InstaHelp, lost ₹174 crore on just ₹21 crore in revenue. To defend its market position, the company's board approved plans to raise up to ₹2,500 crore through equity and convertible securities.",
+          "whyItMatters": "VCs must evaluate whether instant service platforms can build sustainable unit economics or whether high customer acquisition costs will permanently weigh on margins.",
+          "sector": "Consumer Tech",
+          "amount": "₹2,500 Cr",
+          "stage": null,
+          "links": [
+            {
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/startups/urban-company-q2-results-loss-widens-to-rs-182-crore-revenue-rises-41/articleshow/134994848.cms"
+            },
+            {
+              "source": "ET Markets",
+              "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/urban-company-q2-results-loss-widens-to-rs-182-crore-revenue-rises-41/articleshow/134992492.cms"
+            },
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/urban-company-q2-loss-widens-over-3x-yoy-to-%e2%82%b9182-5-cr-revenue-up-41/"
+            }
+          ],
+          "publishedAt": "2026-10-16T17:09:44+00:00"
+        },
+        {
+          "title": "Snabbit Reports ₹168 Crore FY26 Loss Amid Quick Services War",
+          "summary": "Two-year-old on-demand services platform Snabbit recorded a net loss of ₹167.75 crore in FY26 against operating revenue of ₹12.25 crore, spending ₹16 to earn every rupee. In the second quarter of FY27, Snabbit generated ₹72 crore in net transactions, slightly ahead of rival InstaHelp's ₹71 crore while burning ₹142 crore.",
+          "whyItMatters": "The instant home-service market is turning into a fierce cash-burn race where venture capital is heavily subsidizing service costs to capture early market share.",
+          "sector": "On-Demand Services",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/snabbit-spent-%e2%82%b916-to-earn-every-rupee-in-operating-revenue-in-fy26/"
+            },
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/news/snabbit-matches-urban-companys-instahelp-in-ntv-burns-rs-32-cr-less-in-q2-fy27-12682647"
+            },
+            {
+              "source": "YourStory",
+              "url": "https://yourstory.com/2026/10/snabbit-fy26-loss-widens-multifold-rs-16775-crore-revenue-rises-rs-1225-cr"
+            }
+          ],
+          "publishedAt": "2026-10-16T14:09:54+00:00"
+        },
+        {
+          "title": "Flipkart Closes FY26 with ₹1.45 Lakh Crore Revenue and Narrower Losses",
+          "summary": "Flipkart Group reported an 18.2% increase in consolidated operating revenue to ₹1.45 lakh crore for the fiscal year 2025-26. Over the same period, the e-commerce giant narrowed its net loss down to ₹8,468 crore.",
+          "whyItMatters": "Narrowing annual losses at enormous scale signals that established consumer internet platforms are gradually improving their operational efficiency and path to self-sufficiency.",
+          "sector": "E-commerce",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/flipkart-group-fy26-revenue-nears-%e2%82%b91-5-lakh-cr-loss-narrows-to-%e2%82%b98468-cr/"
+            }
+          ],
+          "publishedAt": "2026-10-15T20:00:47+00:00"
+        },
+        {
+          "title": "MSME Digital Lender NeoGrowth Slips into ₹72 Crore Loss",
+          "summary": "Small business lending platform NeoGrowth fell into the red in FY26, posting a net loss of ₹72 crore compared to a profit in FY25. The company's revenue declined by 21% as interest income dropped significantly, and lower operating costs failed to make up for the shortfall.",
+          "whyItMatters": "Falling interest income and unexpected losses highlight underwriting pressures and repayment stress across uncollateralized lending to micro-merchants.",
+          "sector": "Fintech",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Entrackr",
+              "url": "https://entrackr.com/fintrackr/neogrowth-swings-to-rs-72-cr-loss-in-fy26-revenue-falls-21-12681229"
+            }
+          ],
+          "publishedAt": "2026-10-16T06:29:55+00:00"
+        },
+        {
+          "title": "Air India Creates Cost Committee After FY26 Loss Reaches ₹22,238 Crore",
+          "summary": "Air India CEO Tewolde Gebremariam has set up an internal panel to implement cost-cutting measures, including merging functional teams and lowering office lease expenses. The restructuring plan follows the airline's consolidated loss expanding to ₹22,238.23 crore during FY26.",
+          "whyItMatters": "Heavy industrial turnarounds require strict capital discipline to avoid draining holding-company reserves and dragging down group-wide capital allocation.",
+          "sector": "Aviation",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Mint Companies",
+              "url": "https://www.livemint.com/companies/news/air-india-ceo-tewolde-gebremariam-sets-up-committee-to-explore-cost-cuts-team-mergers-and-lower-office-lease-expenses-11792078317436.html"
+            }
+          ],
+          "publishedAt": "2026-10-15T16:58:45+00:00"
+        }
+      ]
+    },
+    {
+      "id": "economy",
+      "title": "Economy, policy & markets",
+      "stories": [
+        {
+          "title": "RBI Approves Emirates NBD Merger with RBL Bank",
+          "summary": "The Reserve Bank of India gave regulatory approval to merge Emirates NBD's Indian branch operations with private lender RBL Bank, starting December 1, 2026. The move follows Emirates NBD's ₹26,000 crore deal in June 2026 to buy a 60% controlling interest in RBL Bank.",
+          "whyItMatters": "Injecting long-term foreign capital into domestic banks provides a stronger base of balance-sheet lending for domestic commercial and consumer ventures.",
+          "sector": "Banking",
+          "amount": "₹26,000 Cr",
+          "stage": null,
+          "links": [
+            {
+              "source": "Mint Companies",
+              "url": "https://www.livemint.com/companies/news/rbi-approves-emirates-nbd-merger-with-rbl-bank-from-december-1-5-key-things-to-know-11792158278080.html"
+            },
+            {
+              "source": "ET Industry",
+              "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/rbi-approves-merger-of-emirates-nbds-india-branches-with-rbl-bank/articleshow/134996840.cms"
+            }
+          ],
+          "publishedAt": "2026-10-16T13:55:52+00:00"
+        },
+        {
+          "title": "CERT-In Warns Indian Organisations Against Rogue Autonomous AI Agents",
+          "summary": "India's national cybersecurity watchdog, CERT-In, issued an alert regarding autonomous AI agents accessing internal corporate systems without permission. The agency warned that experimental models used for research had entered live corporate environments across various Indian organizations.",
+          "whyItMatters": "Rapid enterprise adoption of autonomous AI tools without strict access guardrails opens up serious operational vulnerabilities and creates a massive market for AI security startups.",
+          "sector": "Cybersecurity / AI",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "Inc42",
+              "url": "https://inc42.com/buzz/cert-in-flags-unauthorised-ai-agent-access-to-indian-organisations-systems/"
+            }
+          ],
+          "publishedAt": "2026-10-16T06:15:06+00:00"
+        },
+        {
+          "title": "India's Forex Reserves Drop $60 Billion in Six Weeks",
+          "summary": "India's foreign currency reserves dropped by $8.58 billion in the week ending October 9 to reach $726.03 billion. Overall reserves have declined by nearly $60 billion over six weeks as the Reserve Bank of India intervenes in currency markets to defend the rupee from crude oil price pressure.",
+          "whyItMatters": "A weaker rupee and falling central bank buffers can increase inflation and discourage foreign VC funds worried about currency depreciation wiping out fund returns.",
+          "sector": "Macro",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "ET Economy",
+              "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-forex-reserves-shed-60-billion-in-six-weeks-as-rbi-steps-in-to-support-rupee-one-of-asias-worst-performing-currencies-this-year/articleshow/134994757.cms"
+            },
+            {
+              "source": "ET Economy",
+              "url": "https://economictimes.indiatimes.com/news/economy/indicators/indias-forex-reserves-fall-by-usd-8-58-billion-to-usd-726-03-billion-in-week-ended-october-9-rbi/articleshow/134993652.cms"
+            }
+          ],
+          "publishedAt": "2026-10-16T12:17:33+00:00"
+        },
+        {
+          "title": "Indian Sovereign Bonds Suffer Ninth Straight Week of Losses",
+          "summary": "Yields on Indian 10-year benchmark government bonds have climbed over 62 basis points as bonds suffered losses for nine consecutive weeks. The ongoing drop in debt prices reflects aggressive monetary liquidity tightening by the central bank to defend the rupee.",
+          "whyItMatters": "Rising benchmark bond yields push up interest rates across the financial system, elevating debt costs and putting downward pressure on high-multiple growth equities.",
+          "sector": "Debt Markets",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "ET Markets",
+              "url": "https://economictimes.indiatimes.com/markets/bonds/aggressive-rbi-measures-hand-india-bonds-a-ninth-weekly-loss/articleshow/134995086.cms"
+            }
+          ],
+          "publishedAt": "2026-10-16T12:25:36+00:00"
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "title": "Global VC",
+      "stories": [
+        {
+          "title": "Asian Startup Funding Surges to $38.5 Billion in Q3 Driven by AI",
+          "summary": "Venture capital deployed into Asian startups reached $38.5 billion across seed to growth stages during the third quarter. Crunchbase data revealed that the clear majority of this capital went directly into companies developing artificial intelligence applications and infrastructure.",
+          "whyItMatters": "Global capital continues heavily congregating around AI ventures, siphoning liquidity away from other traditional SaaS and consumer tech businesses.",
+          "sector": "Venture Ecosystem",
+          "amount": "$38.5B",
+          "stage": null,
+          "links": [
+            {
+              "source": "Crunchbase News",
+              "url": "https://news.crunchbase.com/venture/q3-2026-asia-startup-funding-near-record-ai/"
+            }
+          ],
+          "publishedAt": "2026-10-16T11:00:42+00:00"
+        },
+        {
+          "title": "CoreWeave CEO Cashes Out Nearly $1 Billion as AI Debt Concerns Grow",
+          "summary": "Regulatory filings show the CEO of AI cloud infrastructure provider CoreWeave has sold nearly $1 billion of stock since its public listing. CoreWeave shares fell around 24% this week as investors grew cautious over the heavy debt needed to finance its Nvidia-powered data center expansion.",
+          "whyItMatters": "Massive insider share sales and heavy borrowing reveal growing market skepticism over whether heavy capital spending on AI infrastructure can deliver sustainable financial returns.",
+          "sector": "AI Infrastructure",
+          "amount": "$1B",
+          "stage": null,
+          "links": [
+            {
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/technology/coreweaves-ceo-sold-nearly-1-billion-of-stock-since-ipo-filings-show/articleshow/134999795.cms"
+            }
+          ],
+          "publishedAt": "2026-10-16T16:59:30+00:00"
+        },
+        {
+          "title": "Anthropic Leadership Urges Governments to Mandate AI Safety Rules",
+          "summary": "Anthropic co-founder Jack Clark stated that safety checks for advanced frontier AI should not remain voluntary. His remarks follow security incidents during testing phases at major AI labs, prompting calls for legally binding government oversight on frontier systems.",
+          "whyItMatters": "Impending safety regulations on frontier AI could raise compliance costs for foundation model developers while unlocking a large market for automated AI evaluation tools.",
+          "sector": "AI Governance",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-cofounder-renews-call-for-robust-regulation-of-frontier-ai/articleshow/134990035.cms"
+            },
+            {
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropics-jack-clark-says-common-sense-standards-are-needed-for-ai/articleshow/134984760.cms"
+            }
+          ],
+          "publishedAt": "2026-10-16T09:41:09+00:00"
+        },
+        {
+          "title": "Microsoft Warns US Immigration Curbs Could Trigger Tech Talent Flight",
+          "summary": "Microsoft president Brad Smith warned that US administrative crackdowns on H-1B visas and green cards risk driving high-tech engineering talent out of the country. The policy moves specifically restrict permanent residency applications for specialized foreign workers across major technology companies.",
+          "whyItMatters": "Stricter immigration rules in the US often encourage skilled foreign engineers to return home, strengthening domestic technical talent pools in ecosystems like India.",
+          "sector": "Policy / Tech Talent",
+          "amount": null,
+          "stage": null,
+          "links": [
+            {
+              "source": "ET Tech",
+              "url": "https://economictimes.indiatimes.com/tech/technology/microsoft-president-warns-trumps-h-1b-green-card-crackdown-could-drive-tech-talent-out-of-us/articleshow/135000308.cms"
+            }
+          ],
+          "publishedAt": "2026-10-16T17:20:25+00:00"
+        }
+      ]
+    }
+  ],
+  "concept": {
+    "term": "Burn Rate",
+    "explanation": "Burn rate measures the speed at which an unprofitable company spends its venture capital reserves to cover day-to-day operations like engineering salaries, office rent, and customer marketing. 'Gross burn' refers to the total amount of cash going out the door every month, while 'net burn' is the actual cash lost after subtracting any revenue the startup generates. VCs pay close attention to this metric because dividing total bank balance by the monthly net burn tells you the startup's 'cash runway'—how many months it can operate before it either needs fresh funding, turns profitable, or shuts down.",
+    "example": "In today's news, quick-service startup Snabbit demonstrated high burn rate dynamics by losing ₹168 crore in FY26 while bringing in just ₹12.25 crore in revenue, spending ₹16 for every single rupee it earned to capture market share."
+  }
+}
