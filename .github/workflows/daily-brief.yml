@@ -5,12 +5,14 @@ name: Daily Brief
 
 on:
   schedule:
-    # Times are UTC. 01:15 UTC = 06:45 AM India time (main run).
-    # The two later runs are backups: they do nothing if today's brief already exists,
-    # and retry if the AI was too busy earlier. GitHub may start runs a few minutes late.
-    - cron: "15 1 * * *"   # 06:45 IST
-    - cron: "45 2 * * *"   # 08:15 IST, backup
-    - cron: "15 4 * * *"   # 09:45 IST, backup
+    # Times are UTC (India = UTC + 5:30). GitHub runs schedules "best effort": runs can
+    # start late or be skipped, especially near the top of the hour. So there are five
+    # attempts at odd minutes. Each one does nothing if today's brief already exists.
+    - cron: "41 0 * * *"   # 06:11 IST, main run
+    - cron: "37 1 * * *"   # 07:07 IST, backup
+    - cron: "23 2 * * *"   # 07:53 IST, backup
+    - cron: "19 3 * * *"   # 08:49 IST, backup
+    - cron: "47 4 * * *"   # 10:17 IST, backup
   # Lets you run it by hand: GitHub → Actions → Daily Brief → Run workflow
   workflow_dispatch:
     inputs:

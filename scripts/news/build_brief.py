@@ -401,6 +401,26 @@ def recently_published_urls(today: str, days: int = 4) -> set[str]:
     return seen
 
 
+def recent_story_titles(today: str, days: int = 3) -> list[str]:
+    """Headlines already published in the last few briefs, so the AI can skip repeats
+    that reach us through a different news site (same event, different link)."""
+    titles: list[str] = []
+    if not OUTPUT_DIR.exists():
+        return titles
+    for path in sorted(OUTPUT_DIR.glob("*.json"))[-(days + 1):]:
+        if path.stem == today:
+            continue
+        try:
+            brief = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        for section in brief.get("sections", []):
+            for story in section.get("stories", []):
+                if story.get("title"):
+                    titles.append(str(story["title"]))
+    return titles[-80:]
+
+
 def recent_concepts(limit: int = 60) -> list[str]:
     terms: list[str] = []
     if not OUTPUT_DIR.exists():
@@ -510,7 +530,10 @@ Section meanings:
 - global: important non-India VC/startup news
 
 Pick the 18 to 25 most useful stories in total, most important first inside each section. Use "global" only for news outside India.
-Do NOT pick these concepts again (already explained recently): {used_concepts}"""
+Do NOT pick these concepts again (already explained recently): {used_concepts}
+
+Stories already covered in the last few days. Do NOT include them again unless today's items report a genuinely new development (for example a new amount, a result, or a completed deal); if you do, say what is new in the title:
+{recent_titles}"""
 
 
 class AIError(RuntimeError):
@@ -829,6 +852,7 @@ def main(argv: list[str] | None = None) -> int:
         date=date,
         items=format_candidates(cands),
         used_concepts=", ".join(used) if used else "none yet",
+        recent_titles="\n".join(f"- {t}" for t in recent_story_titles(date)) or "- none",
     )
     log("Asking the AI to simplify…")
     try:

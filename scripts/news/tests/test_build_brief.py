@@ -264,5 +264,24 @@ class GeminiBusyTests(unittest.TestCase):
             collect.assert_not_called()
 
 
+class RepeatTests(unittest.TestCase):
+    def test_recent_titles_exclude_today_and_feed_prompt(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp)
+            def write(day, title):
+                (out / f"{day}.json").write_text(json.dumps({"sections": [{"stories": [{"title": title}]}]}), encoding="utf-8")
+            write("2026-10-12", "Too old")
+            write("2026-10-14", "Older story")
+            write("2026-10-15", "Middle story")
+            write("2026-10-16", "RapidCanvas raises $29M")
+            write("2026-10-17", "Today's own story")
+            with mock.patch.object(bb, "OUTPUT_DIR", out):
+                titles = bb.recent_story_titles("2026-10-17")
+            self.assertEqual(titles, ["Older story", "Middle story", "RapidCanvas raises $29M"])
+        prompt = bb.USER_TEMPLATE.format(date="d", items="i", used_concepts="c", recent_titles="- RapidCanvas raises $29M")
+        self.assertIn("RapidCanvas raises $29M", prompt)
+        self.assertIn("Do NOT include them again", prompt)
+
+
 if __name__ == "__main__":
     unittest.main()
